@@ -25,19 +25,28 @@ public class ReservasEndpoint {
     @POST
     @Path("/crear")
     @Produces(MediaType.APPLICATION_JSON + ";charset=UTF-8")    
-    public List<Reserva> crearReserva(@QueryParam("param1") String param1) {
+    public Reserva crearReserva(@QueryParam("nomCliente") String nomCliente,
+                                @QueryParam("docCliente") int docCliente,
+                                @QueryParam("fecDevol") String fechaDevolucion,
+                                @QueryParam("fecRet") String fechaRetiro,
+                                @QueryParam("idVehCiu") String idVehicloCiudad,
+                                @QueryParam("lugDev") String lugarDevolucion, 
+                                @QueryParam("lugRet") String lugarRetiro) {
+        //POST /create?nomCliente=Juancito&docCliente=125...        
+    }
+    
+    @GET
+    @Path("/reserva/{codRes}")
+    @Produces(MediaType.APPLICATION_JSON + ";charset=UTF-8")
+    public Reserva buscarReserva(@PathParam("codRes") int codRes) {
         
     }
-
-    @GET
-    @Path("/calc/{op}/{left}/{right}")
-    public Calculation calculate(@PathParam("op") String op, @PathParam("left") Integer left,
-            @PathParam("right") Integer right) {
-        Calculation result = new Calculation();
-        result.setOperation(op);
-        result.setLeft(left);
-        result.setRight(right);
-        return doCalc(result);
+    
+    @POST
+    @Path("/cancelar/{codRes}")
+    @Produces(MediaType.APPLICATION_JSON + ";charset=UTF-8")    
+    public Reserva cancelarReserva(@PathParam("codRes") int codRes) {
+              
     }
-     
+
 }
