@@ -30,11 +30,11 @@
         </init-param>
         <init-param>
             <param-name>allowedMethods</param-name>
-            <param-value>*</param-value>
+            <param-value>GET,POST,DELETE,PUT,HEAD</param-value>
         </init-param>
         <init-param>
             <param-name>allowedHeaders</param-name>
-            <param-value>*</param-value>
+            <param-value>origin, content-type, accept</param-value>
         </init-param>
     </filter>
     <filter-mapping>
