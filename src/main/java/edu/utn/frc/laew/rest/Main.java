@@ -7,10 +7,7 @@ import javax.xml.transform.Source;
 import javax.xml.transform.stream.StreamSource;
 import javax.xml.ws.Dispatch;
 import javax.xml.ws.Service;
-import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.VehiculoModel;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.servlet.ServletContextHandler;
-import org.eclipse.jetty.servlet.ServletHolder;
+
 
 /**
  * Entry point of this webservice. Creates a Jetty instance.
@@ -21,7 +18,7 @@ import org.eclipse.jetty.servlet.ServletHolder;
 public class Main {
      
 
-    public static void main(String[] args) throws Exception {                      
+    //public static void main(String[] args) throws Exception {                      
         //Creation of the jetty web server on the Heroku provided port.
         /*try {
             HerokuPostgresFacade.initDB();
@@ -42,7 +39,7 @@ public class Main {
         
         //consultarCiudades();
         //VehiculoModel model = new VehiculoModel();        
-    }
+    //}
     
     private static void consultarCiudades() {  
         try { // Call Web Service Operation

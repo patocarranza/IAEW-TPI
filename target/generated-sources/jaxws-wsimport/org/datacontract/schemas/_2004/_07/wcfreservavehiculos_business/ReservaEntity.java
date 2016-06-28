@@ -7,7 +7,6 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementRef;
-import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.datatype.XMLGregorianCalendar;
@@ -66,7 +65,6 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "vehiculoPorCiudadEntity",
     "vehiculoPorCiudadId"
 })
-@XmlRootElement
 public class ReservaEntity {
 
     @XmlElementRef(name = "ApellidoNombreCliente", namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", type = JAXBElement.class, required = false)

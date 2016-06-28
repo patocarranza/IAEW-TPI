@@ -1,7 +1,6 @@
 
 package org.datacontract.schemas._2004._07.wcfreservavehiculos_business;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -56,7 +55,7 @@ import javax.xml.bind.annotation.XmlType;
     "tipoCambio",
     "vehiculoCiudadId"
 })
-public class VehiculoModel implements Serializable {
+public class VehiculoModel {
 
     @XmlElement(name = "CantidadDisponible")
     protected Integer cantidadDisponible;

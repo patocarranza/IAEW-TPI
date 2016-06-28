@@ -15,7 +15,7 @@ import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservaEn
 @Path("/reservas")
 public class ReservasEndpoint {
     
-    @GET
+    /*@GET
     @Path("/listado")
     @Produces(MediaType.APPLICATION_JSON + ";charset=UTF-8")
     public List<Reserva> getReservasExistentes(@QueryParam("canceladas") boolean incluirCanceladas) {
@@ -48,6 +48,6 @@ public class ReservasEndpoint {
     @Produces(MediaType.APPLICATION_JSON + ";charset=UTF-8")    
     public Reserva cancelarReserva(@PathParam("codRes") int codRes) {
               
-    }
+    }*/
 
 }

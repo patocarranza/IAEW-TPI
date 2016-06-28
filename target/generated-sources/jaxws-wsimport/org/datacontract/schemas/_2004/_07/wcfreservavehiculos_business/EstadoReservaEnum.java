@@ -1,7 +1,6 @@
 
 package org.datacontract.schemas._2004._07.wcfreservavehiculos_business;
 
-import java.io.Serializable;
 import javax.xml.bind.annotation.XmlEnum;
 import javax.xml.bind.annotation.XmlEnumValue;
 import javax.xml.bind.annotation.XmlType;
@@ -24,7 +23,7 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlType(name = "EstadoReservaEnum", namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel")
 @XmlEnum
-public enum EstadoReservaEnum implements Serializable {
+public enum EstadoReservaEnum {
 
     @XmlEnumValue("Activa")
     ACTIVA("Activa"),

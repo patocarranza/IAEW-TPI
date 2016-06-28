@@ -1,7 +1,6 @@
 
 package org.datacontract.schemas._2004._07.wcfreservavehiculos_business;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -33,7 +32,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "ArrayOfVehiculoModel", propOrder = {
     "vehiculoModel"
 })
-public class ArrayOfVehiculoModel implements Serializable {
+public class ArrayOfVehiculoModel {
 
     @XmlElement(name = "VehiculoModel", nillable = true)
     protected List<VehiculoModel> vehiculoModel;

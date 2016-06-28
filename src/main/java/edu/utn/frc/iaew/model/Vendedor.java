@@ -19,7 +19,8 @@ public class Vendedor implements Serializable {
     public Vendedor() {
     }
 
-    public Vendedor(String nombre) {
+    public Vendedor(int id, String nombre) {
+        this.id = id;
         this.nombre = nombre;
     }
 

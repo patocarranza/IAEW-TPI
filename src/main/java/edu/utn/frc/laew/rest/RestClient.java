@@ -9,23 +9,21 @@ import javax.ws.rs.client.Entity;
 import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-
-import org.anvard.jaxrs.api.Calculation;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.log4j.Logger;
+import org.apache.log4j.spi.LoggerFactory;
 
 public class RestClient {
 
-	private static final Logger LOG = LoggerFactory.getLogger(RestClient.class);
+	private static final Logger LOG = Logger.getLogger(RestClient.class);
 
 	private WebTarget target;
 
 	public RestClient() {
 		Client client = ClientBuilder.newClient();
-		target = client.target("http://localhost:8680").path("rest").path("calculator");
+                    target = client.target("http://localhost:8680").path("rest").path("rest").path("calculator");
 	}
 
-	public Calculation calc(String op, int left, int right) {
+	/*public Calculation calc(String op, int left, int right) {
 		try {
 			Response response = target.path("calc")
 					.path(URLEncoder.encode(op, "UTF-8"))
@@ -37,15 +35,15 @@ public class RestClient {
 			LOG.error("Request failed", e);
 			return null;
 		}
-	}
+	}*/
 
-	public Calculation calc2(Calculation in) {
+	/*public Calculation calc2(Calculation in) {
 		Response response = target.path("calc2")
 				.request(MediaType.APPLICATION_JSON_TYPE).post(Entity.json(in));
 		return response.readEntity(Calculation.class);
-	}
+	}*/
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		RestClient client = new RestClient();
 		client.print(client.calc("add", 2, 2));
 		client.print(client.calc("subtract", 20, 2));
@@ -58,7 +56,7 @@ public class RestClient {
 		client.print(client.calc2(new Calculation("divide", 16, 5)));
 	}
 
-	public void print(Calculation c) {
+	/*public void print(Calculation c) {
 		StringBuilder sb = new StringBuilder();
 		sb.append(c.getLeft());
 		String op = c.getOperation();
@@ -75,6 +73,6 @@ public class RestClient {
 		sb.append(" = ");
 		sb.append(c.getResult());
 		System.out.println(sb.toString());
-	}
+	}*/
 
 }

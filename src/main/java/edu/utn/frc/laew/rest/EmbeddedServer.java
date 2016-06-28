@@ -23,28 +23,29 @@ public final class EmbeddedServer {
 	}
 
 	public static void main(String[] args) throws Exception {
-		URI baseUri = UriBuilder.fromUri("http://localhost").port(SERVER_PORT)
-				.build();
-		ResourceConfig config = new ResourceConfig(ReservasEndpoint.class);
-		Server server = JettyHttpContainerFactory.createServer(baseUri, config,
-				false);
-
-		ContextHandler contextHandler = new ContextHandler("/rest");
-		contextHandler.setHandler(server.getHandler());
-		
-		ProtectionDomain protectionDomain = EmbeddedServer.class
-				.getProtectionDomain();
+		URI baseUri = UriBuilder.fromUri("http://localhost").port(SERVER_PORT).build();
+                ResourceHandler resourceHandler = new ResourceHandler();
+                ProtectionDomain protectionDomain = EmbeddedServer.class.getProtectionDomain();
 		URL location = protectionDomain.getCodeSource().getLocation();
-		
-		ResourceHandler resourceHandler = new ResourceHandler();
 		resourceHandler.setWelcomeFiles(new String[] { "index.html" });
 		resourceHandler.setResourceBase(location.toExternalForm());
 		System.out.println(location.toExternalForm());
+                
+		ResourceConfig config = new ResourceConfig(ReservasEndpoint.class, AuxDataEndpoint.class);                                
+		Server server = JettyHttpContainerFactory.createServer(baseUri, config, false);                
+		ContextHandler contextHandler = new ContextHandler("/rest/ops");
+		contextHandler.setHandler(server.getHandler());
+                ContextHandler contextHandler2 = new ContextHandler("/rest/aux");
+		contextHandler2.setHandler(server.getHandler());
+						
+		
 		HandlerCollection handlerCollection = new HandlerCollection();
 		handlerCollection.setHandlers(new Handler[] { resourceHandler,
-				contextHandler, new DefaultHandler() });
+                                                             contextHandler, 
+                                                             contextHandler2,
+                                                             new DefaultHandler() });
 		server.setHandler(handlerCollection);
-		server.start();
-		server.join();
+		server.start();                
+		server.join(); 
 	}
 }
