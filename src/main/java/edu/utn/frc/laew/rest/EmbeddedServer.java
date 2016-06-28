@@ -33,7 +33,7 @@ public final class EmbeddedServer {
                 
 		ResourceConfig config = new ResourceConfig(ReservasEndpoint.class, AuxDataEndpoint.class);                                
 		Server server = JettyHttpContainerFactory.createServer(baseUri, config, false);                
-		ContextHandler contextHandler = new ContextHandler("/rest/ops");
+		ContextHandler contextHandler = new ContextHandler("/rest/ops");                
 		contextHandler.setHandler(server.getHandler());
                 ContextHandler contextHandler2 = new ContextHandler("/rest/aux");
 		contextHandler2.setHandler(server.getHandler());

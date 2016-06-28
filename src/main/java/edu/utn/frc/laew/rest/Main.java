@@ -18,7 +18,7 @@ import javax.xml.ws.Service;
 public class Main {
      
 
-    //public static void main(String[] args) throws Exception {                      
+    public static void main(String[] args) throws Exception {                      
         //Creation of the jetty web server on the Heroku provided port.
         /*try {
             HerokuPostgresFacade.initDB();
@@ -37,9 +37,8 @@ public class Main {
             ex.printStackTrace();
         }*/
         
-        //consultarCiudades();
-        //VehiculoModel model = new VehiculoModel();        
-    //}
+        consultarCiudades();        
+    }
     
     private static void consultarCiudades() {  
         try { // Call Web Service Operation
@@ -47,11 +46,11 @@ public class Main {
             org.tempuri.IWCFReservaVehiculos port = service.getWSHttpBindingIWCFReservaVehiculos();
             // TODO process result here
             org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse result = port.consultarPaises();
-            System.out.println("Result = "+result);
+            System.out.println("Result = "+result.getPaises().toString());
         } catch (Exception ex) {
-            // TODO handle custom exceptions here
-        }
-        
+            ex.printStackTrace();
+        }        
+
         try {
             org.tempuri.WCFReservaVehiculos service = new org.tempuri.WCFReservaVehiculos();            
             org.tempuri.IWCFReservaVehiculos serv2 = service.getWSHttpBindingIWCFReservaVehiculos(new javax.xml.ws.soap.AddressingFeature());
