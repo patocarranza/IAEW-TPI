@@ -18,7 +18,7 @@ public class ReservasEndpoint {
     @GET
     @Path("/listado")
     @Produces(MediaType.APPLICATION_JSON + ";charset=UTF-8")
-    public List<Reserva> getReservasExistentes() {
+    public List<Reserva> getReservasExistentes(@QueryParam("canceladas") boolean incluirCanceladas) {
         
     }
     
