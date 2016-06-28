@@ -31,7 +31,8 @@ public class ReservasEndpoint {
                                 @QueryParam("fecRet") String fechaRetiro,
                                 @QueryParam("idVehCiu") String idVehicloCiudad,
                                 @QueryParam("lugDev") String lugarDevolucion, 
-                                @QueryParam("lugRet") String lugarRetiro) {
+                                @QueryParam("lugRet") String lugarRetiro, 
+                                @QueryParam("idVend") int idVendedor) {
         //POST /create?nomCliente=Juancito&docCliente=125...        
     }
     
