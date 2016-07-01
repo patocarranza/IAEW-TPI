@@ -1,6 +1,7 @@
 package edu.utn.frc.laew.rest;
 
 
+import edu.utn.frc.iaew.ORM.DAOImplementacion.*;
 import edu.utn.frc.iaew.misc.Utils;
 import edu.utn.frc.iaew.model.*;
 import edu.utn.frc.laew.soap.ReservasSoapService;
@@ -16,7 +17,6 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.LugarRetiroDevolucion;
-import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ObjectFactory;
 
 @Path("/data")
 public class AuxDataEndpoint {    
@@ -25,11 +25,13 @@ public class AuxDataEndpoint {
     @Path("/vendedores") //http://localhost:8680/rest/aux/data/vendedores
     @Produces(MediaType.APPLICATION_JSON + ";charset=UTF-8")
     public Response listarVendedores() {
-        List<Vendedor> vendedoresMock = new LinkedList<>();
+        VendedorDAO dao = new VendedorDAO();
+        return RestUtils.getCORS200Response(dao.listar());
+        /*List<Vendedor> vendedoresMock = new LinkedList<>();
         vendedoresMock.add(new Vendedor(1, "Juan"));
         vendedoresMock.add(new Vendedor(2, "Pablo"));
         vendedoresMock.add(new Vendedor(3, "Alvaro"));
-        return RestUtils.getCORS200Response(vendedoresMock);
+        return RestUtils.getCORS200Response(vendedoresMock);*/
     }    
     
     @GET
@@ -72,10 +74,11 @@ public class AuxDataEndpoint {
                                      @QueryParam("fecRet") String fechaRetiro,
                                      @QueryParam("fecDev") String fechaDevolucion) {
         try {
+            System.out.println("fecha: " + fechaRetiro);
             return RestUtils.getCORS200Response(ReservasSoapService
-                    .consultarVehiculosDisponibles(idCiudad, 
-                                                   Utils.getStringAsDateTime(fechaRetiro).toDate(), 
-                                                   Utils.getStringAsDateTime(fechaDevolucion).toDate()));
+                        .consultarVehiculosDisponibles(idCiudad, 
+                                                       Utils.getStringAsDateTime(fechaRetiro).toDate(), 
+                                                       Utils.getStringAsDateTime(fechaDevolucion).toDate()));
         } catch(Exception ex) {
             return RestUtils.getCORS500Response(ex);
         }

@@ -3,9 +3,7 @@ package edu.utn.frc.iaew.model;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
-import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.EstadoReservaEnum;
-import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.LugarRetiroDevolucion;
-import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.VehiculoModel;
+import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.*;
 
 /**
  *

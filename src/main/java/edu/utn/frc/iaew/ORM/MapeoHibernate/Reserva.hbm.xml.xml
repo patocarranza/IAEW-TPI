@@ -29,10 +29,12 @@
               <param name="enumClass">org.datacontract.schemas._2004._07.wcfreservavehiculos_business.LugarRetiroDevolucion</param>
             </type>
         </property>
-        <property name="costo"/>
-        <property name="totalReserva"/>
         <many-to-one name="vendedor" column="id_vendedor"/>
         <many-to-one name="cliente" column="id_cliente"/>
+        <property name="usuarioReserva"/>
+        <property name="usuarioCancelacion"/>
+        <property name="costo"/>
+        <property name="precioFinal"/>                
         <property name="vehiculoPorCiudadId"/>
         <many-to-one name="vehiculo" column="id_vehiculo"/>        
     </class>    

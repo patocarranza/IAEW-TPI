@@ -9,8 +9,8 @@ import java.math.BigDecimal;
  */
 public class Vehiculo implements Serializable {
         
-    private Integer id;
-    private Integer cantidadPuertas;    
+    private int id;
+    private int cantidadPuertas;    
     private String marca;    
     private String modelo;    
     private BigDecimal precioPorDia;    

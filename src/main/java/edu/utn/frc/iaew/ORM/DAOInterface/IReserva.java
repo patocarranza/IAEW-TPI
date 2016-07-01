@@ -10,7 +10,7 @@ import java.util.List;
  */
 public interface IReserva extends IGenericDAO<Reserva, Integer> {
 
-    public List<Reserva> listarExistentes();
-    public void cancelarReserva(Reserva reserva);
+    public List<Reserva> listarExistentes(boolean incluirCanceladas);
+    public Reserva cancelarReserva(String codReserva);
 
 }
