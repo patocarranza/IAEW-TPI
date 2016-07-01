@@ -12,9 +12,18 @@ import java.io.Serializable;
  * @author ang_2
  */
 public class Cliente implements Serializable {
-    
+
     private String documento;
     private String nombre;
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public Cliente() {
     }

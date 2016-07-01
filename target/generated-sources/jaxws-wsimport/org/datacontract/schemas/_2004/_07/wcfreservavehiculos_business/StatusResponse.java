@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for StatusResponse complex type.
+ * <p>Clase Java para StatusResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="StatusResponse">
@@ -46,7 +46,7 @@ public class StatusResponse {
     protected JAXBElement<String> innerExceptionDescription;
 
     /**
-     * Gets the value of the errorCode property.
+     * Obtiene el valor de la propiedad errorCode.
      * 
      * @return
      *     possible object is
@@ -58,7 +58,7 @@ public class StatusResponse {
     }
 
     /**
-     * Sets the value of the errorCode property.
+     * Define el valor de la propiedad errorCode.
      * 
      * @param value
      *     allowed object is
@@ -70,7 +70,7 @@ public class StatusResponse {
     }
 
     /**
-     * Gets the value of the errorDescription property.
+     * Obtiene el valor de la propiedad errorDescription.
      * 
      * @return
      *     possible object is
@@ -82,7 +82,7 @@ public class StatusResponse {
     }
 
     /**
-     * Sets the value of the errorDescription property.
+     * Define el valor de la propiedad errorDescription.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class StatusResponse {
     }
 
     /**
-     * Gets the value of the innerExceptionDescription property.
+     * Obtiene el valor de la propiedad innerExceptionDescription.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class StatusResponse {
     }
 
     /**
-     * Sets the value of the innerExceptionDescription property.
+     * Define el valor de la propiedad innerExceptionDescription.
      * 
      * @param value
      *     allowed object is

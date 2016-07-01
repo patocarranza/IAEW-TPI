@@ -12,9 +12,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for ConsultarReservasResponse complex type.
+ * <p>Clase Java para ConsultarReservasResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="ConsultarReservasResponse">
@@ -45,7 +45,7 @@ public class ConsultarReservasResponse {
     protected XMLGregorianCalendar timeStamp;
 
     /**
-     * Gets the value of the reservas property.
+     * Obtiene el valor de la propiedad reservas.
      * 
      * @return
      *     possible object is
@@ -57,7 +57,7 @@ public class ConsultarReservasResponse {
     }
 
     /**
-     * Sets the value of the reservas property.
+     * Define el valor de la propiedad reservas.
      * 
      * @param value
      *     allowed object is
@@ -69,7 +69,7 @@ public class ConsultarReservasResponse {
     }
 
     /**
-     * Gets the value of the timeStamp property.
+     * Obtiene el valor de la propiedad timeStamp.
      * 
      * @return
      *     possible object is
@@ -81,7 +81,7 @@ public class ConsultarReservasResponse {
     }
 
     /**
-     * Sets the value of the timeStamp property.
+     * Define el valor de la propiedad timeStamp.
      * 
      * @param value
      *     allowed object is

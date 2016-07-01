@@ -9,9 +9,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for CancelarReservaRequest complex type.
+ * <p>Clase Java para CancelarReservaRequest complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="CancelarReservaRequest">
@@ -37,7 +37,7 @@ public class CancelarReservaRequest {
     protected JAXBElement<String> codigoReserva;
 
     /**
-     * Gets the value of the codigoReserva property.
+     * Obtiene el valor de la propiedad codigoReserva.
      * 
      * @return
      *     possible object is
@@ -49,7 +49,7 @@ public class CancelarReservaRequest {
     }
 
     /**
-     * Sets the value of the codigoReserva property.
+     * Define el valor de la propiedad codigoReserva.
      * 
      * @param value
      *     allowed object is

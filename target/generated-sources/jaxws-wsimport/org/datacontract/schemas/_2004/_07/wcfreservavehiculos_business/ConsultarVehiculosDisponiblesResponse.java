@@ -12,9 +12,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for ConsultarVehiculosDisponiblesResponse complex type.
+ * <p>Clase Java para ConsultarVehiculosDisponiblesResponse complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="ConsultarVehiculosDisponiblesResponse">
@@ -45,7 +45,7 @@ public class ConsultarVehiculosDisponiblesResponse {
     protected JAXBElement<ArrayOfVehiculoModel> vehiculosEncontrados;
 
     /**
-     * Gets the value of the timeStamp property.
+     * Obtiene el valor de la propiedad timeStamp.
      * 
      * @return
      *     possible object is
@@ -57,7 +57,7 @@ public class ConsultarVehiculosDisponiblesResponse {
     }
 
     /**
-     * Sets the value of the timeStamp property.
+     * Define el valor de la propiedad timeStamp.
      * 
      * @param value
      *     allowed object is
@@ -69,7 +69,7 @@ public class ConsultarVehiculosDisponiblesResponse {
     }
 
     /**
-     * Gets the value of the vehiculosEncontrados property.
+     * Obtiene el valor de la propiedad vehiculosEncontrados.
      * 
      * @return
      *     possible object is
@@ -81,7 +81,7 @@ public class ConsultarVehiculosDisponiblesResponse {
     }
 
     /**
-     * Sets the value of the vehiculosEncontrados property.
+     * Define el valor de la propiedad vehiculosEncontrados.
      * 
      * @param value
      *     allowed object is

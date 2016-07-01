@@ -1,3 +1,5 @@
+package Filtro;
+
 
 
 import edu.utn.frc.iaew.ORM.Util.HibernateUtil;

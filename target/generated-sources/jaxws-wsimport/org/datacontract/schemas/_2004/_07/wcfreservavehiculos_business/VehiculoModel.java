@@ -11,9 +11,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for VehiculoModel complex type.
+ * <p>Clase Java para VehiculoModel complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="VehiculoModel">
@@ -83,7 +83,7 @@ public class VehiculoModel {
     protected Integer vehiculoCiudadId;
 
     /**
-     * Gets the value of the cantidadDisponible property.
+     * Obtiene el valor de la propiedad cantidadDisponible.
      * 
      * @return
      *     possible object is
@@ -95,7 +95,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the cantidadDisponible property.
+     * Define el valor de la propiedad cantidadDisponible.
      * 
      * @param value
      *     allowed object is
@@ -107,7 +107,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the cantidadPuertas property.
+     * Obtiene el valor de la propiedad cantidadPuertas.
      * 
      * @return
      *     possible object is
@@ -119,7 +119,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the cantidadPuertas property.
+     * Define el valor de la propiedad cantidadPuertas.
      * 
      * @param value
      *     allowed object is
@@ -131,7 +131,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the ciudadId property.
+     * Obtiene el valor de la propiedad ciudadId.
      * 
      * @return
      *     possible object is
@@ -143,7 +143,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the ciudadId property.
+     * Define el valor de la propiedad ciudadId.
      * 
      * @param value
      *     allowed object is
@@ -155,7 +155,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the id property.
+     * Obtiene el valor de la propiedad id.
      * 
      * @return
      *     possible object is
@@ -167,7 +167,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the id property.
+     * Define el valor de la propiedad id.
      * 
      * @param value
      *     allowed object is
@@ -179,7 +179,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the marca property.
+     * Obtiene el valor de la propiedad marca.
      * 
      * @return
      *     possible object is
@@ -191,7 +191,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the marca property.
+     * Define el valor de la propiedad marca.
      * 
      * @param value
      *     allowed object is
@@ -203,7 +203,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the modelo property.
+     * Obtiene el valor de la propiedad modelo.
      * 
      * @return
      *     possible object is
@@ -215,7 +215,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the modelo property.
+     * Define el valor de la propiedad modelo.
      * 
      * @param value
      *     allowed object is
@@ -227,7 +227,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the precioPorDia property.
+     * Obtiene el valor de la propiedad precioPorDia.
      * 
      * @return
      *     possible object is
@@ -239,7 +239,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the precioPorDia property.
+     * Define el valor de la propiedad precioPorDia.
      * 
      * @param value
      *     allowed object is
@@ -251,7 +251,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the puntaje property.
+     * Obtiene el valor de la propiedad puntaje.
      * 
      * @return
      *     possible object is
@@ -263,7 +263,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the puntaje property.
+     * Define el valor de la propiedad puntaje.
      * 
      * @param value
      *     allowed object is
@@ -275,7 +275,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the tieneAireAcon property.
+     * Obtiene el valor de la propiedad tieneAireAcon.
      * 
      * @return
      *     possible object is
@@ -287,7 +287,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the tieneAireAcon property.
+     * Define el valor de la propiedad tieneAireAcon.
      * 
      * @param value
      *     allowed object is
@@ -299,7 +299,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the tieneDireccion property.
+     * Obtiene el valor de la propiedad tieneDireccion.
      * 
      * @return
      *     possible object is
@@ -311,7 +311,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the tieneDireccion property.
+     * Define el valor de la propiedad tieneDireccion.
      * 
      * @param value
      *     allowed object is
@@ -323,7 +323,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the tipoCambio property.
+     * Obtiene el valor de la propiedad tipoCambio.
      * 
      * @return
      *     possible object is
@@ -335,7 +335,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the tipoCambio property.
+     * Define el valor de la propiedad tipoCambio.
      * 
      * @param value
      *     allowed object is
@@ -347,7 +347,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Gets the value of the vehiculoCiudadId property.
+     * Obtiene el valor de la propiedad vehiculoCiudadId.
      * 
      * @return
      *     possible object is
@@ -359,7 +359,7 @@ public class VehiculoModel {
     }
 
     /**
-     * Sets the value of the vehiculoCiudadId property.
+     * Define el valor de la propiedad vehiculoCiudadId.
      * 
      * @param value
      *     allowed object is

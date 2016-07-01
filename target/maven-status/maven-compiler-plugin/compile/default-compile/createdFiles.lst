@@ -1,3 +1,4 @@
+edu\utn\frc\laew\rest\ReservasApp.class
 edu\utn\frc\iaew\ORM\DAOImplementacion\ClienteDAO.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ReservarVehiculoRequest.class
 edu\utn\frc\iaew\ORM\DAOInterface\ICliente.class
@@ -13,9 +14,11 @@ edu\utn\frc\iaew\model\Reserva.class
 edu\utn\frc\iaew\ORM\Util\GenericDAO.class
 org\tempuri\IWCFReservaVehiculos.class
 org\tempuri\IWCFReservaVehiculosConsultarVehiculosDisponiblesStatusResponseFaultFaultMessage.class
+edu\utn\frc\laew\soap\SoapServiceTests.class
 org\tempuri\ConsultarPaisesResponse.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\CancelarReservaResponse.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ConsultarVehiculosDisponiblesResponse.class
+edu\utn\frc\laew\rest\AuxDataEndpoint.class
 edu\utn\frc\iaew\ORM\DAOImplementacion\VendedorDAO.class
 org\tempuri\package-info.class
 edu\utn\frc\laew\rest\CORSRequestFilter.class
@@ -29,6 +32,8 @@ org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ConsultarPaisesR
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ConsultarReservasRequest.class
 org\tempuri\IWCFReservaVehiculosConsultarCiudadesStatusResponseFaultFaultMessage.class
 com\microsoft\schemas\_2003\_10\serialization\ObjectFactory.class
+edu\utn\frc\laew\rest\RestUtils.class
+edu\utn\frc\laew\rest\ReservasEndpoint.class
 edu\utn\frc\iaew\ORM\DAOInterface\IReserva.class
 org\tempuri\IWCFReservaVehiculosReservarVehiculoStatusResponseFaultFaultMessage.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\VehiculoEntity.class
@@ -38,12 +43,15 @@ org\tempuri\ConsultarVehiculosDisponibles.class
 edu\utn\frc\iaew\model\Cliente.class
 edu\utn\frc\iaew\ORM\Util\IGenericDAO.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ConsultarReservasResponse.class
-HibernateSessionRequestFilter.class
+edu\utn\frc\laew\database\PostgresUtils.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ArrayOfVehiculoModel.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ConsultarCiudadesRequest.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\ReservarVehiculoResponse.class
+edu\utn\frc\iaew\misc\Utils.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\CancelarReservaRequest.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\package-info.class
+edu\utn\frc\iaew\ORM\DAOImplementacion\ReservaDAO.class
+edu\utn\frc\laew\database\HerokuPostgresFacade.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\EstadoReservaEnum.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\VehiculoModel.class
 org\datacontract\schemas\_2004\_07\wcfreservavehiculos_business\CiudadEntity.class
@@ -55,5 +63,6 @@ edu\utn\frc\iaew\model\Vendedor.class
 edu\utn\frc\iaew\ORM\DAOInterface\IVendedor.class
 edu\utn\frc\iaew\model\Pais.class
 edu\utn\frc\iaew\model\Vehiculo.class
+edu\utn\frc\laew\rest\EmbeddedServer.class
 org\tempuri\ConsultarPaises.class
 edu\utn\frc\laew\soap\ModelAdapters.class

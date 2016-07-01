@@ -13,9 +13,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java class for ReservaEntity complex type.
+ * <p>Clase Java para ReservaEntity complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType name="ReservaEntity">
@@ -104,7 +104,7 @@ public class ReservaEntity {
     protected Integer vehiculoPorCiudadId;
 
     /**
-     * Gets the value of the apellidoNombreCliente property.
+     * Obtiene el valor de la propiedad apellidoNombreCliente.
      * 
      * @return
      *     possible object is
@@ -116,7 +116,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the apellidoNombreCliente property.
+     * Define el valor de la propiedad apellidoNombreCliente.
      * 
      * @param value
      *     allowed object is
@@ -128,7 +128,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the codigoReserva property.
+     * Obtiene el valor de la propiedad codigoReserva.
      * 
      * @return
      *     possible object is
@@ -140,7 +140,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the codigoReserva property.
+     * Define el valor de la propiedad codigoReserva.
      * 
      * @param value
      *     allowed object is
@@ -152,7 +152,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the estado property.
+     * Obtiene el valor de la propiedad estado.
      * 
      * @return
      *     possible object is
@@ -164,7 +164,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the estado property.
+     * Define el valor de la propiedad estado.
      * 
      * @param value
      *     allowed object is
@@ -176,7 +176,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the fechaCancelacion property.
+     * Obtiene el valor de la propiedad fechaCancelacion.
      * 
      * @return
      *     possible object is
@@ -188,7 +188,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the fechaCancelacion property.
+     * Define el valor de la propiedad fechaCancelacion.
      * 
      * @param value
      *     allowed object is
@@ -200,7 +200,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the fechaHoraDevolucion property.
+     * Obtiene el valor de la propiedad fechaHoraDevolucion.
      * 
      * @return
      *     possible object is
@@ -212,7 +212,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the fechaHoraDevolucion property.
+     * Define el valor de la propiedad fechaHoraDevolucion.
      * 
      * @param value
      *     allowed object is
@@ -224,7 +224,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the fechaHoraRetiro property.
+     * Obtiene el valor de la propiedad fechaHoraRetiro.
      * 
      * @return
      *     possible object is
@@ -236,7 +236,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the fechaHoraRetiro property.
+     * Define el valor de la propiedad fechaHoraRetiro.
      * 
      * @param value
      *     allowed object is
@@ -248,7 +248,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the fechaReserva property.
+     * Obtiene el valor de la propiedad fechaReserva.
      * 
      * @return
      *     possible object is
@@ -260,7 +260,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the fechaReserva property.
+     * Define el valor de la propiedad fechaReserva.
      * 
      * @param value
      *     allowed object is
@@ -272,7 +272,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the id property.
+     * Obtiene el valor de la propiedad id.
      * 
      * @return
      *     possible object is
@@ -284,7 +284,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the id property.
+     * Define el valor de la propiedad id.
      * 
      * @param value
      *     allowed object is
@@ -296,7 +296,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the lugarDevolucion property.
+     * Obtiene el valor de la propiedad lugarDevolucion.
      * 
      * @return
      *     possible object is
@@ -308,7 +308,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the lugarDevolucion property.
+     * Define el valor de la propiedad lugarDevolucion.
      * 
      * @param value
      *     allowed object is
@@ -320,7 +320,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the lugarRetiro property.
+     * Obtiene el valor de la propiedad lugarRetiro.
      * 
      * @return
      *     possible object is
@@ -332,7 +332,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the lugarRetiro property.
+     * Define el valor de la propiedad lugarRetiro.
      * 
      * @param value
      *     allowed object is
@@ -344,7 +344,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the nroDocumentoCliente property.
+     * Obtiene el valor de la propiedad nroDocumentoCliente.
      * 
      * @return
      *     possible object is
@@ -356,7 +356,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the nroDocumentoCliente property.
+     * Define el valor de la propiedad nroDocumentoCliente.
      * 
      * @param value
      *     allowed object is
@@ -368,7 +368,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the totalReserva property.
+     * Obtiene el valor de la propiedad totalReserva.
      * 
      * @return
      *     possible object is
@@ -380,7 +380,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the totalReserva property.
+     * Define el valor de la propiedad totalReserva.
      * 
      * @param value
      *     allowed object is
@@ -392,7 +392,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the usuarioCancelacion property.
+     * Obtiene el valor de la propiedad usuarioCancelacion.
      * 
      * @return
      *     possible object is
@@ -404,7 +404,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the usuarioCancelacion property.
+     * Define el valor de la propiedad usuarioCancelacion.
      * 
      * @param value
      *     allowed object is
@@ -416,7 +416,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the usuarioReserva property.
+     * Obtiene el valor de la propiedad usuarioReserva.
      * 
      * @return
      *     possible object is
@@ -428,7 +428,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the usuarioReserva property.
+     * Define el valor de la propiedad usuarioReserva.
      * 
      * @param value
      *     allowed object is
@@ -440,7 +440,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the vehiculoPorCiudadEntity property.
+     * Obtiene el valor de la propiedad vehiculoPorCiudadEntity.
      * 
      * @return
      *     possible object is
@@ -452,7 +452,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the vehiculoPorCiudadEntity property.
+     * Define el valor de la propiedad vehiculoPorCiudadEntity.
      * 
      * @param value
      *     allowed object is
@@ -464,7 +464,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Gets the value of the vehiculoPorCiudadId property.
+     * Obtiene el valor de la propiedad vehiculoPorCiudadId.
      * 
      * @return
      *     possible object is
@@ -476,7 +476,7 @@ public class ReservaEntity {
     }
 
     /**
-     * Sets the value of the vehiculoPorCiudadId property.
+     * Define el valor de la propiedad vehiculoPorCiudadId.
      * 
      * @param value
      *     allowed object is

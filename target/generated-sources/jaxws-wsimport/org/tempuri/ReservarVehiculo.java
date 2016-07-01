@@ -11,9 +11,9 @@ import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarV
 
 
 /**
- * <p>Java class for anonymous complex type.
+ * <p>Clase Java para anonymous complex type.
  * 
- * <p>The following schema fragment specifies the expected content contained within this class.
+ * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
  * &lt;complexType>
@@ -40,7 +40,7 @@ public class ReservarVehiculo {
     protected JAXBElement<ReservarVehiculoRequest> reservarVehiculoRequest;
 
     /**
-     * Gets the value of the reservarVehiculoRequest property.
+     * Obtiene el valor de la propiedad reservarVehiculoRequest.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class ReservarVehiculo {
     }
 
     /**
-     * Sets the value of the reservarVehiculoRequest property.
+     * Define el valor de la propiedad reservarVehiculoRequest.
      * 
      * @param value
      *     allowed object is
