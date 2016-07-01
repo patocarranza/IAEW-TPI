@@ -12,8 +12,7 @@ import java.io.Serializable;
  * @author ang_2
  */
 public class Cliente implements Serializable {
-
-    private int id;
+    
     private String documento;
     private String nombre;
 
@@ -23,14 +22,6 @@ public class Cliente implements Serializable {
     public Cliente(String documento, String nombre) {
         this.documento = documento;
         this.nombre = nombre;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getDocumento() {
@@ -49,4 +40,8 @@ public class Cliente implements Serializable {
         this.nombre = nombre;
     }
 
+    @Override
+    public String toString() {
+        return "Cliente{" + "documento=" + documento + ", nombre=" + nombre + '}';
+    }
 }

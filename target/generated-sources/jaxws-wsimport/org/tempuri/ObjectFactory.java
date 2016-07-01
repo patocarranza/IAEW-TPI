@@ -29,17 +29,17 @@ import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarV
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _CancelarReservaCancelarReservaRequest_QNAME = new QName("http://tempuri.org/", "CancelarReservaRequest");
-    private final static QName _ConsultarCiudadesResponseConsultarCiudadesResult_QNAME = new QName("http://tempuri.org/", "ConsultarCiudadesResult");
-    private final static QName _ConsultarCiudadesConsultarCiudadesRequest_QNAME = new QName("http://tempuri.org/", "ConsultarCiudadesRequest");
-    private final static QName _ConsultarPaisesResponseConsultarPaisesResult_QNAME = new QName("http://tempuri.org/", "ConsultarPaisesResult");
-    private final static QName _ConsultarReservasConsultarReservasRequest_QNAME = new QName("http://tempuri.org/", "ConsultarReservasRequest");
     private final static QName _ReservarVehiculoResponseReservarVehiculoResult_QNAME = new QName("http://tempuri.org/", "ReservarVehiculoResult");
-    private final static QName _ConsultarVehiculosDisponiblesConsultarVehiculosRequest_QNAME = new QName("http://tempuri.org/", "ConsultarVehiculosRequest");
+    private final static QName _ConsultarCiudadesResponseConsultarCiudadesResult_QNAME = new QName("http://tempuri.org/", "ConsultarCiudadesResult");
+    private final static QName _ConsultarReservasConsultarReservasRequest_QNAME = new QName("http://tempuri.org/", "ConsultarReservasRequest");
+    private final static QName _ConsultarPaisesResponseConsultarPaisesResult_QNAME = new QName("http://tempuri.org/", "ConsultarPaisesResult");
     private final static QName _ReservarVehiculoReservarVehiculoRequest_QNAME = new QName("http://tempuri.org/", "ReservarVehiculoRequest");
     private final static QName _CancelarReservaResponseCancelarReservaResult_QNAME = new QName("http://tempuri.org/", "CancelarReservaResult");
     private final static QName _ConsultarVehiculosDisponiblesResponseConsultarVehiculosDisponiblesResult_QNAME = new QName("http://tempuri.org/", "ConsultarVehiculosDisponiblesResult");
+    private final static QName _ConsultarCiudadesConsultarCiudadesRequest_QNAME = new QName("http://tempuri.org/", "ConsultarCiudadesRequest");
     private final static QName _ConsultarReservasResponseConsultarReservasResult_QNAME = new QName("http://tempuri.org/", "ConsultarReservasResult");
+    private final static QName _ConsultarVehiculosDisponiblesConsultarVehiculosRequest_QNAME = new QName("http://tempuri.org/", "ConsultarVehiculosRequest");
+    private final static QName _CancelarReservaCancelarReservaRequest_QNAME = new QName("http://tempuri.org/", "CancelarReservaRequest");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.tempuri
@@ -145,12 +145,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CancelarReservaRequest }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://tempuri.org/", name = "CancelarReservaRequest", scope = CancelarReserva.class)
-    public JAXBElement<CancelarReservaRequest> createCancelarReservaCancelarReservaRequest(CancelarReservaRequest value) {
-        return new JAXBElement<CancelarReservaRequest>(_CancelarReservaCancelarReservaRequest_QNAME, CancelarReservaRequest.class, CancelarReserva.class, value);
+    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ReservarVehiculoResult", scope = org.tempuri.ReservarVehiculoResponse.class)
+    public JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse> createReservarVehiculoResponseReservarVehiculoResult(org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse value) {
+        return new JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse>(_ReservarVehiculoResponseReservarVehiculoResult_QNAME, org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse.class, org.tempuri.ReservarVehiculoResponse.class, value);
     }
 
     /**
@@ -163,24 +163,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ConsultarCiudadesRequest }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ConsultarCiudadesRequest", scope = ConsultarCiudades.class)
-    public JAXBElement<ConsultarCiudadesRequest> createConsultarCiudadesConsultarCiudadesRequest(ConsultarCiudadesRequest value) {
-        return new JAXBElement<ConsultarCiudadesRequest>(_ConsultarCiudadesConsultarCiudadesRequest_QNAME, ConsultarCiudadesRequest.class, ConsultarCiudades.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ConsultarPaisesResult", scope = org.tempuri.ConsultarPaisesResponse.class)
-    public JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse> createConsultarPaisesResponseConsultarPaisesResult(org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse value) {
-        return new JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse>(_ConsultarPaisesResponseConsultarPaisesResult_QNAME, org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse.class, org.tempuri.ConsultarPaisesResponse.class, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link ConsultarReservasRequest }{@code >}}
      * 
      */
@@ -190,21 +172,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ReservarVehiculoResult", scope = org.tempuri.ReservarVehiculoResponse.class)
-    public JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse> createReservarVehiculoResponseReservarVehiculoResult(org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse value) {
-        return new JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse>(_ReservarVehiculoResponseReservarVehiculoResult_QNAME, org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservarVehiculoResponse.class, org.tempuri.ReservarVehiculoResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ConsultarVehiculosRequest }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ConsultarVehiculosRequest", scope = ConsultarVehiculosDisponibles.class)
-    public JAXBElement<ConsultarVehiculosRequest> createConsultarVehiculosDisponiblesConsultarVehiculosRequest(ConsultarVehiculosRequest value) {
-        return new JAXBElement<ConsultarVehiculosRequest>(_ConsultarVehiculosDisponiblesConsultarVehiculosRequest_QNAME, ConsultarVehiculosRequest.class, ConsultarVehiculosDisponibles.class, value);
+    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ConsultarPaisesResult", scope = org.tempuri.ConsultarPaisesResponse.class)
+    public JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse> createConsultarPaisesResponseConsultarPaisesResult(org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse value) {
+        return new JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse>(_ConsultarPaisesResponseConsultarPaisesResult_QNAME, org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarPaisesResponse.class, org.tempuri.ConsultarPaisesResponse.class, value);
     }
 
     /**
@@ -235,12 +208,39 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ConsultarCiudadesRequest }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ConsultarCiudadesRequest", scope = ConsultarCiudades.class)
+    public JAXBElement<ConsultarCiudadesRequest> createConsultarCiudadesConsultarCiudadesRequest(ConsultarCiudadesRequest value) {
+        return new JAXBElement<ConsultarCiudadesRequest>(_ConsultarCiudadesConsultarCiudadesRequest_QNAME, ConsultarCiudadesRequest.class, ConsultarCiudades.class, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarReservasResponse }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://tempuri.org/", name = "ConsultarReservasResult", scope = org.tempuri.ConsultarReservasResponse.class)
     public JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarReservasResponse> createConsultarReservasResponseConsultarReservasResult(org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarReservasResponse value) {
         return new JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarReservasResponse>(_ConsultarReservasResponseConsultarReservasResult_QNAME, org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarReservasResponse.class, org.tempuri.ConsultarReservasResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ConsultarVehiculosRequest }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://tempuri.org/", name = "ConsultarVehiculosRequest", scope = ConsultarVehiculosDisponibles.class)
+    public JAXBElement<ConsultarVehiculosRequest> createConsultarVehiculosDisponiblesConsultarVehiculosRequest(ConsultarVehiculosRequest value) {
+        return new JAXBElement<ConsultarVehiculosRequest>(_ConsultarVehiculosDisponiblesConsultarVehiculosRequest_QNAME, ConsultarVehiculosRequest.class, ConsultarVehiculosDisponibles.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CancelarReservaRequest }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://tempuri.org/", name = "CancelarReservaRequest", scope = CancelarReserva.class)
+    public JAXBElement<CancelarReservaRequest> createCancelarReservaCancelarReservaRequest(CancelarReservaRequest value) {
+        return new JAXBElement<CancelarReservaRequest>(_CancelarReservaCancelarReservaRequest_QNAME, CancelarReservaRequest.class, CancelarReserva.class, value);
     }
 
 }

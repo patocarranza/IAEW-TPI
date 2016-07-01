@@ -84,6 +84,28 @@ public class WCFReservaVehiculos
         return super.getPort(new QName("http://tempuri.org/", "WSHttpBinding_IWCFReservaVehiculos"), IWCFReservaVehiculos.class, features);
     }
 
+    /**
+     * 
+     * @return
+     *     returns IWCFReservaVehiculos
+     */
+    @WebEndpoint(name = "BasicHttpBinding_IWCFReservaVehiculos")
+    public IWCFReservaVehiculos getBasicHttpBindingIWCFReservaVehiculos() {
+        return super.getPort(new QName("http://tempuri.org/", "BasicHttpBinding_IWCFReservaVehiculos"), IWCFReservaVehiculos.class);
+    }
+
+    /**
+     * 
+     * @param features
+     *     A list of {@link javax.xml.ws.WebServiceFeature} to configure on the proxy.  Supported features not in the <code>features</code> parameter will have their default values.
+     * @return
+     *     returns IWCFReservaVehiculos
+     */
+    @WebEndpoint(name = "BasicHttpBinding_IWCFReservaVehiculos")
+    public IWCFReservaVehiculos getBasicHttpBindingIWCFReservaVehiculos(WebServiceFeature... features) {
+        return super.getPort(new QName("http://tempuri.org/", "BasicHttpBinding_IWCFReservaVehiculos"), IWCFReservaVehiculos.class, features);
+    }
+
     private static URL __getWsdlLocation() {
         if (WCFRESERVAVEHICULOS_EXCEPTION!= null) {
             throw WCFRESERVAVEHICULOS_EXCEPTION;

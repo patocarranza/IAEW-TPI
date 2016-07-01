@@ -16,6 +16,11 @@ public class Ciudad implements Serializable {
     public Ciudad() {
     }
 
+    public Ciudad(int id) {
+        this.id = id;
+        this.nombre = "";
+    }        
+
     public Ciudad(int id, String nombre, int idPais) {
         this.id = id;
         this.nombre = nombre;
@@ -44,6 +49,11 @@ public class Ciudad implements Serializable {
 
     public void setIdPais(int idPais) {
         this.idPais = idPais;
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudad{" + "id=" + id + ", nombre=" + nombre + ", idPais=" + idPais + '}';
     }
     
     

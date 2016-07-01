@@ -8,28 +8,29 @@ import java.math.BigDecimal;
  * @author patri_000
  */
 public class Vehiculo implements Serializable {
-    
-    private Integer cantidadDisponible;    
-    private Integer cantidadPuertas;    
-    private Integer ciudadId;    
+        
     private Integer id;
+    private Integer cantidadPuertas;    
     private String marca;    
     private String modelo;    
     private BigDecimal precioPorDia;    
     private String puntaje;    
     private Boolean tieneAireAcon;    
     private Boolean tieneDireccion;    
-    private String tipoCambio;    
-    private Integer vehiculoCiudadId;
+    private String tipoCambio;
+    private Ciudad ciudad;
+    private int cantidadDisponible;
+    private int vehiculoPorCiudadId;
 
     public Vehiculo() {
     }
 
-    public Vehiculo(Integer cantidadDisponible, Integer cantidadPuertas, Integer ciudadId, Integer id, String marca, String modelo, BigDecimal precioPorDia, String puntaje, Boolean tieneAireAcon, Boolean tieneDireccion, String tipoCambio, Integer vehiculoCiudadId) {
-        this.cantidadDisponible = cantidadDisponible;
-        this.cantidadPuertas = cantidadPuertas;
-        this.ciudadId = ciudadId;
+    public Vehiculo(Integer id, Integer cantidadPuertas, String marca, String modelo,
+                    BigDecimal precioPorDia, String puntaje, Boolean tieneAireAcon,
+                    Boolean tieneDireccion, String tipoCambio, Ciudad ciudad, 
+                    int cantidadDisponible, int vehiculoPorCiudadId) {
         this.id = id;
+        this.cantidadPuertas = cantidadPuertas;
         this.marca = marca;
         this.modelo = modelo;
         this.precioPorDia = precioPorDia;
@@ -37,15 +38,33 @@ public class Vehiculo implements Serializable {
         this.tieneAireAcon = tieneAireAcon;
         this.tieneDireccion = tieneDireccion;
         this.tipoCambio = tipoCambio;
-        this.vehiculoCiudadId = vehiculoCiudadId;
+        this.ciudad = ciudad;
+        this.cantidadDisponible = cantidadDisponible;
+        this.vehiculoPorCiudadId = vehiculoPorCiudadId;
     }
 
-    public Integer getCantidadDisponible() {
+    public Ciudad getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(Ciudad ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public int getCantidadDisponible() {
         return cantidadDisponible;
     }
 
-    public void setCantidadDisponible(Integer cantidadDisponible) {
+    public void setCantidadDisponible(int cantidadDisponible) {
         this.cantidadDisponible = cantidadDisponible;
+    }   
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public Integer getCantidadPuertas() {
@@ -54,22 +73,6 @@ public class Vehiculo implements Serializable {
 
     public void setCantidadPuertas(Integer cantidadPuertas) {
         this.cantidadPuertas = cantidadPuertas;
-    }
-
-    public Integer getCiudadId() {
-        return ciudadId;
-    }
-
-    public void setCiudadId(Integer ciudadId) {
-        this.ciudadId = ciudadId;
-    }
-
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
     }
 
     public String getMarca() {
@@ -128,13 +131,16 @@ public class Vehiculo implements Serializable {
         this.tipoCambio = tipoCambio;
     }
 
-    public Integer getVehiculoCiudadId() {
-        return vehiculoCiudadId;
+    public int getVehiculoPorCiudadId() {
+        return vehiculoPorCiudadId;
     }
 
-    public void setVehiculoCiudadId(Integer vehiculoCiudadId) {
-        this.vehiculoCiudadId = vehiculoCiudadId;
+    public void setVehiculoPorCiudadId(int vehiculoPorCiudadId) {
+        this.vehiculoPorCiudadId = vehiculoPorCiudadId;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" + "id=" + id + ", cantidadPuertas=" + cantidadPuertas + ", marca=" + marca + ", modelo=" + modelo + ", precioPorDia=" + precioPorDia + ", puntaje=" + puntaje + ", tieneAireAcon=" + tieneAireAcon + ", tieneDireccion=" + tieneDireccion + ", tipoCambio=" + tipoCambio + ", ciudad=" + ciudad + ", cantidadDisponible=" + cantidadDisponible + ", vehiculoPorCiudadId=" + vehiculoPorCiudadId + '}';
+    }   
 }

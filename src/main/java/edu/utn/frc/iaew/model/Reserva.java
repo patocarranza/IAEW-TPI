@@ -24,16 +24,22 @@ public class Reserva implements Serializable {
     private LugarRetiroDevolucion lugarDevolucion;    
     private Vendedor vendedor;
     private Cliente cliente;
+    private String usuarioReserva;
+    private String usuarioCancelacion;
     private BigDecimal costo;
-    private BigDecimal totalReserva;
+    private BigDecimal precioFinal;
     private int vehiculoPorCiudadId;
-    private VehiculoModel vehiculo;
+    private Vehiculo vehiculo;
     
 
     public Reserva() {
     }
 
-    public Reserva(int id, String codigoReserva, Date fechaReserva, Date fechaHoraDevolucion, Date fechaHoraRetiro, Date fechaCancelacion, EstadoReservaEnum estado, LugarRetiroDevolucion lugarRetiro, LugarRetiroDevolucion lugarDevolucion, Vendedor vendedor, Cliente cliente, BigDecimal costo, BigDecimal totalReserva, int vehiculoPorCiudadId, VehiculoModel vehiculo) {
+    public Reserva(int id, String codigoReserva, Date fechaReserva, Date fechaHoraDevolucion, 
+                   Date fechaHoraRetiro, Date fechaCancelacion, EstadoReservaEnum estado, 
+                   LugarRetiroDevolucion lugarRetiro, LugarRetiroDevolucion lugarDevolucion, 
+                   Vendedor vendedor, Cliente cliente, String usuarioReserva, String usuarioCancelacion, 
+                   BigDecimal costo, BigDecimal precioFinal, int vehiculoPorCiudadId, Vehiculo vehiculo) {
         this.id = id;
         this.codigoReserva = codigoReserva;
         this.fechaReserva = fechaReserva;
@@ -45,20 +51,38 @@ public class Reserva implements Serializable {
         this.lugarDevolucion = lugarDevolucion;
         this.vendedor = vendedor;
         this.cliente = cliente;
+        this.usuarioReserva = usuarioReserva;
+        this.usuarioCancelacion = usuarioCancelacion;
         this.costo = costo;
-        this.totalReserva = totalReserva;
+        this.precioFinal = precioFinal;
         this.vehiculoPorCiudadId = vehiculoPorCiudadId;
         this.vehiculo = vehiculo;
-    }   
+    }
 
-    public VehiculoModel getVehiculo() {
+    public String getUsuarioReserva() {
+        return usuarioReserva;
+    }
+
+    public void setUsuarioReserva(String usuarioReserva) {
+        this.usuarioReserva = usuarioReserva;
+    }
+
+    public String getUsuarioCancelacion() {
+        return usuarioCancelacion;
+    }
+
+    public void setUsuarioCancelacion(String usuarioCancelacion) {
+        this.usuarioCancelacion = usuarioCancelacion;
+    }
+
+    public Vehiculo getVehiculo() {
         return vehiculo;
     }
 
-    public void setVehiculo(VehiculoModel vehiculo) {
+    public void setVehiculo(Vehiculo vehiculo) {
         this.vehiculo = vehiculo;
     }
-
+  
     public Date getFechaHoraDevolucion() {
         return fechaHoraDevolucion;
     }
@@ -107,12 +131,12 @@ public class Reserva implements Serializable {
         this.lugarDevolucion = lugarDevolucion;
     }
 
-    public BigDecimal getTotalReserva() {
-        return totalReserva;
+    public BigDecimal getPrecioFinal() {
+        return precioFinal;
     }
 
-    public void setTotalReserva(BigDecimal totalReserva) {
-        this.totalReserva = totalReserva;
+    public void setPrecioFinal(BigDecimal precioFinal) {
+        this.precioFinal = precioFinal;
     }
 
     public int getVehiculoPorCiudadId() {
@@ -171,5 +195,8 @@ public class Reserva implements Serializable {
         this.costo = costo;
     }
 
-
+    @Override
+    public String toString() {
+        return "Reserva{" + "id=" + id + ", codigoReserva=" + codigoReserva + ", fechaReserva=" + fechaReserva + ", fechaHoraDevolucion=" + fechaHoraDevolucion + ", fechaHoraRetiro=" + fechaHoraRetiro + ", fechaCancelacion=" + fechaCancelacion + ", estado=" + estado + ", lugarRetiro=" + lugarRetiro + ", lugarDevolucion=" + lugarDevolucion + ", vendedor=" + vendedor + ", cliente=" + cliente + ", usuarioReserva=" + usuarioReserva + ", usuarioCancelacion=" + usuarioCancelacion + ", costo=" + costo + ", precioFinal=" + precioFinal + ", vehiculoPorCiudadId=" + vehiculoPorCiudadId + ", vehiculo=" + vehiculo + '}';
+    }
 }

@@ -1,6 +1,6 @@
 package edu.utn.frc.laew.database;
 
-import edu.utn.frc.laew.rest.Utils;
+import edu.utn.frc.iaew.misc.Utils;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.sql.Connection;

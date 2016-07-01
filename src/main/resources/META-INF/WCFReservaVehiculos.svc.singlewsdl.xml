@@ -6,8 +6,8 @@
                 <tcp:AutomaticallySelectOptimalTransport/>
                 <fi:AutomaticallySelectOptimalEncoding/>
                 <sc:CallbackHandlerConfiguration wspp:visibility="private">
-                    <sc:CallbackHandler default="wsitUser" name="usernameHandler"/>
-                    <sc:CallbackHandler default="changeit" name="passwordHandler"/>
+                    <sc:CallbackHandler default="grupo2" name="usernameHandler"/>
+                    <sc:CallbackHandler default="UGIHN46B1K" name="passwordHandler"/>
                 </sc:CallbackHandlerConfiguration>
                 <sc:TrustStore wspp:visibility="private" location="" type="JKS" storepass="changeit" peeralias="xws-security-server"/>
             </wsp1:All>

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package edu.utn.frc.iaew.model;
 
 import java.io.Serializable;
@@ -38,6 +33,11 @@ public class Vendedor implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Vendedor{" + "id=" + id + ", nombre=" + nombre + '}';
     }
 
 }
