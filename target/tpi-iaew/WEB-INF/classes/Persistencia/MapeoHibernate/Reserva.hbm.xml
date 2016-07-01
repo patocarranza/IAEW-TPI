@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 13-sep-2013 15:59:20 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping package="edu.utn.frc.iaew.model">   
+    <class name="Reserva" table="Reserva">
+        <id column="id" name="id">
+            <generator class="native"/>
+        </id>
+        <property name="codigoReserva"/>
+        <property name="fechaReserva"/>
+        <property name="fechaHoraDevolucion"/>
+        <property name="fechaHoraRetiro"/>
+        <property name="fechaCancelacion"/>
+        <property name="estado">
+            <type name="org.hibernate.type.EnumType">
+              <param name="type">12</param>
+              <param name="enumClass">org.datacontract.schemas._2004._07.wcfreservavehiculos_business.EstadoReservaEnum</param>
+            </type>
+        </property>
+        <property name="lugarRetiro">
+            <type name="org.hibernate.type.EnumType">
+              <param name="type">12</param>
+              <param name="enumClass">org.datacontract.schemas._2004._07.wcfreservavehiculos_business.LugarRetiroDevolucion</param>
+            </type>
+        </property>
+        <property name="lugarDevolucion">
+            <type name="org.hibernate.type.EnumType">
+              <param name="type">12</param>
+              <param name="enumClass">org.datacontract.schemas._2004._07.wcfreservavehiculos_business.LugarRetiroDevolucion</param>
+            </type>
+        </property>
+        <many-to-one name="vendedor" column="id_vendedor"/>
+        <many-to-one name="cliente" column="id_cliente"/>
+        <property name="usuarioReserva"/>
+        <property name="usuarioCancelacion"/>
+        <property name="costo"/>
+        <property name="precioFinal"/>                
+        <property name="vehiculoPorCiudadId"/>
+        <many-to-one name="vehiculo" column="id_vehiculo"/>        
+    </class>    
+</hibernate-mapping>
