@@ -14,6 +14,9 @@ public class SoapServiceTests {
     
     public static void main(String[] args) {
         
+        //System.out.println(LugarRetiroDevolucion.Aeropuerto.value());
+        System.out.println(LugarRetiroDevolucion.fromValue("Aeropuerto").value());
+        
         //consultarPaises Success
         /*try {
             System.out.println("consultarPaises SUCCESS: " + ReservasSoapService.consultarPaises());
@@ -60,7 +63,7 @@ public class SoapServiceTests {
             System.out.println("consultarVehiculosDisponibles FAIL: " + ex.getMessage());
         }*/
         
-        System.out.println("\n\n");
+        /*System.out.println("\n\n");
         
         //consultarReservas Success
         try {
@@ -68,12 +71,12 @@ public class SoapServiceTests {
         } catch(Exception ex) {
             ex.printStackTrace(); 
             System.out.println(ex.getMessage());
-        }   
+        }*/   
         
         System.out.println("\n\n");
         
         //reservarVehiculo Success
-        /*try {
+        try {
             System.out.println("reservarVehiculo SUCCESS: " + ReservasSoapService.reservarVehiculo("Patricio Carranza", 
                                                                     new DateTime().plusDays(3).toDate(),
                                                                     new DateTime().plusDays(5).toDate(),
@@ -84,7 +87,7 @@ public class SoapServiceTests {
         } catch(Exception ex) {
             ex.printStackTrace(); 
             System.out.println(ex.getMessage());
-        } */        
+        }
         
         //reservarVehiculo Fail
         /*try {
@@ -98,6 +101,13 @@ public class SoapServiceTests {
         } catch(Exception ex) {
             ex.printStackTrace(); 
             System.out.println("consultarReservas FAIL: " + ex.getMessage());
+        }*/
+        
+        /*try {
+            System.out.println("cancelarReserva SUCCESS: " + ReservasSoapService.cancelarReserva("WOA0M"));
+        } catch(Exception ex) {
+            ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }*/
     }
 }

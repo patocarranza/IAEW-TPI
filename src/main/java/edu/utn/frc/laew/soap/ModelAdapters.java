@@ -7,6 +7,9 @@ import edu.utn.frc.iaew.model.Reserva;
 import edu.utn.frc.iaew.model.Vehiculo;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.annotation.XmlElementDecl;
+import javax.xml.namespace.QName;
 import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.CiudadEntity;
 import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.LugarRetiroDevolucion;
 import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ReservaEntity;
@@ -19,7 +22,9 @@ import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.VehiculoE
 public class ModelAdapters {
     
     public static Reserva toReserva(ReservaEntity res) {
-        Vehiculo veh = null;
+        Vehiculo veh = null;        
+        //Nunca va a entrar a este if lamentablemente, la referencia VehiculoPorCiudad
+        //viene null del servidor.
         if(res.getVehiculoPorCiudadEntity().getValue() != null &&
            res.getVehiculoPorCiudadEntity().getValue().getVehiculoEntity().getValue() != null) {
             VehiculoEntity vec = res.getVehiculoPorCiudadEntity().getValue().getVehiculoEntity().getValue();            
@@ -63,5 +68,10 @@ public class ModelAdapters {
                         res.getTotalReserva().multiply(new BigDecimal("1.20")).setScale(2, RoundingMode.HALF_UP), 
                         res.getVehiculoPorCiudadId(), 
                         veh);
+    }
+    
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "string")
+    public static JAXBElement<String> createJAXBString(String paramName, String value) {
+        return new JAXBElement<String>(new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", paramName), String.class, value);
     }
 }
