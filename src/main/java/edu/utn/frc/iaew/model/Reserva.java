@@ -1,5 +1,8 @@
 package edu.utn.frc.iaew.model;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -9,9 +12,12 @@ import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.*;
  *
  * @author ang_2
  */
+@JsonAutoDetect
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Reserva implements Serializable {    
 
     private int id;
+    private int idpk;
     private String codigoReserva;
     private Date fechaReserva;
     private Date fechaHoraDevolucion;
@@ -57,6 +63,16 @@ public class Reserva implements Serializable {
         this.vehiculo = vehiculo;
     }
 
+    @JsonProperty
+    public int getIdpk() {
+        return idpk;
+    }
+
+    public void setIdpk(int idpk) {
+        this.idpk = idpk;
+    }
+
+    @JsonProperty
     public String getUsuarioReserva() {
         return usuarioReserva;
     }
@@ -65,6 +81,7 @@ public class Reserva implements Serializable {
         this.usuarioReserva = usuarioReserva;
     }
 
+    @JsonProperty
     public String getUsuarioCancelacion() {
         return usuarioCancelacion;
     }
@@ -73,6 +90,7 @@ public class Reserva implements Serializable {
         this.usuarioCancelacion = usuarioCancelacion;
     }
 
+    @JsonProperty
     public Vehiculo getVehiculo() {
         return vehiculo;
     }
@@ -81,6 +99,7 @@ public class Reserva implements Serializable {
         this.vehiculo = vehiculo;
     }
   
+    @JsonProperty
     public Date getFechaHoraDevolucion() {
         return fechaHoraDevolucion;
     }
@@ -89,6 +108,7 @@ public class Reserva implements Serializable {
         this.fechaHoraDevolucion = fechaHoraDevolucion;
     }
 
+    @JsonProperty
     public Date getFechaHoraRetiro() {
         return fechaHoraRetiro;
     }
@@ -97,6 +117,7 @@ public class Reserva implements Serializable {
         this.fechaHoraRetiro = fechaHoraRetiro;
     }
 
+    @JsonProperty
     public Date getFechaCancelacion() {
         return fechaCancelacion;
     }
@@ -105,6 +126,7 @@ public class Reserva implements Serializable {
         this.fechaCancelacion = fechaCancelacion;
     }
 
+    @JsonProperty
     public EstadoReservaEnum getEstado() {
         return estado;
     }
@@ -113,6 +135,7 @@ public class Reserva implements Serializable {
         this.estado = estado;
     }
 
+    @JsonProperty
     public LugarRetiroDevolucion getLugarRetiro() {
         return lugarRetiro;
     }
@@ -121,6 +144,7 @@ public class Reserva implements Serializable {
         this.lugarRetiro = lugarRetiro;
     }
 
+    @JsonProperty
     public LugarRetiroDevolucion getLugarDevolucion() {
         return lugarDevolucion;
     }
@@ -129,6 +153,7 @@ public class Reserva implements Serializable {
         this.lugarDevolucion = lugarDevolucion;
     }
 
+    @JsonProperty
     public BigDecimal getPrecioFinal() {
         return precioFinal;
     }
@@ -137,6 +162,7 @@ public class Reserva implements Serializable {
         this.precioFinal = precioFinal;
     }
 
+    @JsonProperty
     public int getVehiculoPorCiudadId() {
         return vehiculoPorCiudadId;
     }
@@ -145,6 +171,7 @@ public class Reserva implements Serializable {
         this.vehiculoPorCiudadId = vehiculoPorCiudadId;
     }  
 
+    @JsonProperty
     public int getId() {
         return id;
     }
@@ -153,6 +180,7 @@ public class Reserva implements Serializable {
         this.id = id;
     }
 
+    @JsonProperty
     public String getCodigoReserva() {
         return codigoReserva;
     }
@@ -161,6 +189,7 @@ public class Reserva implements Serializable {
         this.codigoReserva = codigoReserva;
     }
 
+    @JsonProperty
     public Date getFechaReserva() {
         return fechaReserva;
     }
@@ -169,6 +198,7 @@ public class Reserva implements Serializable {
         this.fechaReserva = fechaReserva;
     }
 
+    @JsonProperty
     public Vendedor getVendedor() {
         return vendedor;
     }
@@ -177,6 +207,7 @@ public class Reserva implements Serializable {
         this.vendedor = vendedor;
     }
 
+    @JsonProperty
     public Cliente getCliente() {
         return cliente;
     }
@@ -185,6 +216,7 @@ public class Reserva implements Serializable {
         this.cliente = cliente;
     }
 
+    @JsonProperty
     public BigDecimal getCosto() {
         return costo;
     }

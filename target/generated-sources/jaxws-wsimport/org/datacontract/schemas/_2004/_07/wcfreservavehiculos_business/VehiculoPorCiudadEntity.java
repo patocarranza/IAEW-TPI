@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para VehiculoPorCiudadEntity complex type.
+ * <p>Java class for VehiculoPorCiudadEntity complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="VehiculoPorCiudadEntity">
@@ -58,7 +58,7 @@ public class VehiculoPorCiudadEntity {
     protected Integer vehiculoId;
 
     /**
-     * Obtiene el valor de la propiedad cantidadDisponible.
+     * Gets the value of the cantidadDisponible property.
      * 
      * @return
      *     possible object is
@@ -70,7 +70,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Define el valor de la propiedad cantidadDisponible.
+     * Sets the value of the cantidadDisponible property.
      * 
      * @param value
      *     allowed object is
@@ -82,7 +82,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Obtiene el valor de la propiedad ciudadEntity.
+     * Gets the value of the ciudadEntity property.
      * 
      * @return
      *     possible object is
@@ -94,7 +94,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Define el valor de la propiedad ciudadEntity.
+     * Sets the value of the ciudadEntity property.
      * 
      * @param value
      *     allowed object is
@@ -106,7 +106,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Obtiene el valor de la propiedad ciudadId.
+     * Gets the value of the ciudadId property.
      * 
      * @return
      *     possible object is
@@ -118,7 +118,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Define el valor de la propiedad ciudadId.
+     * Sets the value of the ciudadId property.
      * 
      * @param value
      *     allowed object is
@@ -130,7 +130,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Obtiene el valor de la propiedad id.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
@@ -142,7 +142,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Define el valor de la propiedad id.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is
@@ -154,7 +154,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Obtiene el valor de la propiedad vehiculoEntity.
+     * Gets the value of the vehiculoEntity property.
      * 
      * @return
      *     possible object is
@@ -166,7 +166,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Define el valor de la propiedad vehiculoEntity.
+     * Sets the value of the vehiculoEntity property.
      * 
      * @param value
      *     allowed object is
@@ -178,7 +178,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Obtiene el valor de la propiedad vehiculoId.
+     * Gets the value of the vehiculoId property.
      * 
      * @return
      *     possible object is
@@ -190,7 +190,7 @@ public class VehiculoPorCiudadEntity {
     }
 
     /**
-     * Define el valor de la propiedad vehiculoId.
+     * Sets the value of the vehiculoId property.
      * 
      * @param value
      *     allowed object is

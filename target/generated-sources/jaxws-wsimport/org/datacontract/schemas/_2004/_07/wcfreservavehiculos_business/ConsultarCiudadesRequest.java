@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para ConsultarCiudadesRequest complex type.
+ * <p>Java class for ConsultarCiudadesRequest complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ConsultarCiudadesRequest">
@@ -36,7 +36,7 @@ public class ConsultarCiudadesRequest {
     protected Integer idPais;
 
     /**
-     * Obtiene el valor de la propiedad idPais.
+     * Gets the value of the idPais property.
      * 
      * @return
      *     possible object is
@@ -48,7 +48,7 @@ public class ConsultarCiudadesRequest {
     }
 
     /**
-     * Define el valor de la propiedad idPais.
+     * Sets the value of the idPais property.
      * 
      * @param value
      *     allowed object is

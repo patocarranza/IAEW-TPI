@@ -1,19 +1,13 @@
 package edu.utn.frc.laew.rest;
 
+import com.sun.jersey.api.core.ResourceConfig;
 import java.net.URI;
 import java.net.URL;
 import java.security.ProtectionDomain;
+import javax.faces.application.ResourceHandler;
 
 import javax.ws.rs.core.UriBuilder;
 
-import org.eclipse.jetty.server.Handler;
-import org.eclipse.jetty.server.Server;
-import org.eclipse.jetty.server.handler.ContextHandler;
-import org.eclipse.jetty.server.handler.DefaultHandler;
-import org.eclipse.jetty.server.handler.HandlerCollection;
-import org.eclipse.jetty.server.handler.ResourceHandler;
-import org.glassfish.jersey.jetty.JettyHttpContainerFactory;
-import org.glassfish.jersey.server.ResourceConfig;
 
 public final class EmbeddedServer {
 
@@ -22,7 +16,7 @@ public final class EmbeddedServer {
 	private EmbeddedServer() {
 	}
 
-	public static void main(String[] args) throws Exception {
+	/*public static void main(String[] args) throws Exception {
 		URI baseUri = UriBuilder.fromUri("http://localhost").port(SERVER_PORT).build();
                 ResourceHandler resourceHandler = new ResourceHandler();
                 ProtectionDomain protectionDomain = EmbeddedServer.class.getProtectionDomain();
@@ -47,5 +41,5 @@ public final class EmbeddedServer {
 		server.setHandler(handlerCollection);
 		server.start();                
 		server.join(); 
-	}
+	}*/
 }

@@ -5,18 +5,24 @@
  */
 package edu.utn.frc.iaew.model;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 
 /**
  *
  * @author ang_2
  */
+@JsonAutoDetect
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Cliente implements Serializable {
 
     private String documento;
     private String nombre;
     private int id;
 
+    @JsonProperty
     public int getId() {
         return id;
     }
@@ -33,6 +39,7 @@ public class Cliente implements Serializable {
         this.nombre = nombre;
     }
 
+    @JsonProperty
     public String getDocumento() {
         return documento;
     }
@@ -41,6 +48,7 @@ public class Cliente implements Serializable {
         this.documento = documento;
     }
 
+    @JsonProperty
     public String getNombre() {
         return nombre;
     }

@@ -10,9 +10,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Clase Java para ConsultarVehiculosRequest complex type.
+ * <p>Java class for ConsultarVehiculosRequest complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ConsultarVehiculosRequest">
@@ -48,7 +48,7 @@ public class ConsultarVehiculosRequest {
     protected XMLGregorianCalendar fechaHoraDevolucion;
 
     /**
-     * Obtiene el valor de la propiedad idCiudad.
+     * Gets the value of the idCiudad property.
      * 
      * @return
      *     possible object is
@@ -60,7 +60,7 @@ public class ConsultarVehiculosRequest {
     }
 
     /**
-     * Define el valor de la propiedad idCiudad.
+     * Sets the value of the idCiudad property.
      * 
      * @param value
      *     allowed object is
@@ -72,7 +72,7 @@ public class ConsultarVehiculosRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad fechaHoraRetiro.
+     * Gets the value of the fechaHoraRetiro property.
      * 
      * @return
      *     possible object is
@@ -84,7 +84,7 @@ public class ConsultarVehiculosRequest {
     }
 
     /**
-     * Define el valor de la propiedad fechaHoraRetiro.
+     * Sets the value of the fechaHoraRetiro property.
      * 
      * @param value
      *     allowed object is
@@ -96,7 +96,7 @@ public class ConsultarVehiculosRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad fechaHoraDevolucion.
+     * Gets the value of the fechaHoraDevolucion property.
      * 
      * @return
      *     possible object is
@@ -108,7 +108,7 @@ public class ConsultarVehiculosRequest {
     }
 
     /**
-     * Define el valor de la propiedad fechaHoraDevolucion.
+     * Sets the value of the fechaHoraDevolucion property.
      * 
      * @param value
      *     allowed object is

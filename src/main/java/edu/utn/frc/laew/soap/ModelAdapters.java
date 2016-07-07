@@ -24,12 +24,15 @@ public class ModelAdapters {
     public static Reserva toReserva(ReservaEntity res) {
         Vehiculo veh = null;        
         //Nunca va a entrar a este if lamentablemente, la referencia VehiculoPorCiudad
-        //viene null del servidor.
-        if(res.getVehiculoPorCiudadEntity().getValue() != null &&
-           res.getVehiculoPorCiudadEntity().getValue().getVehiculoEntity().getValue() != null) {
-            VehiculoEntity vec = res.getVehiculoPorCiudadEntity().getValue().getVehiculoEntity().getValue();            
-            Ciudad city = null;
-            if(res.getVehiculoPorCiudadEntity().getValue().getCiudadEntity().getValue() != null) {
+        //viene null del servidor.            
+        if(res.getVehiculoPorCiudadEntity() != null 
+           && res.getVehiculoPorCiudadEntity().getValue() != null) {
+            VehiculoEntity vec = res.getVehiculoPorCiudadEntity().getValue().getVehiculoEntity().getValue();      
+            //System.out.println("VehCit NOT NULL");
+            Ciudad city = null;            
+            if(res.getVehiculoPorCiudadEntity().getValue().getCiudadEntity() != null 
+               && res.getVehiculoPorCiudadEntity().getValue().getCiudadEntity().getValue() != null) {
+                //System.out.println("CITY NOT NULL");
                 CiudadEntity cit = res.getVehiculoPorCiudadEntity().getValue().getCiudadEntity().getValue();
                 city = new Ciudad(cit.getId(), 
                                   cit.getNombre().getValue(), 
@@ -50,12 +53,18 @@ public class ModelAdapters {
                                res.getVehiculoPorCiudadId());
         }
         
+//        System.out.println("id = " + res.getId());
+//        System.out.println(" = " + res.getId());
+//        
+//        System.out.println("to string " + res.toString());
+//        System.out.println("costo " + res.getTotalReserva());
+//        
         return new Reserva(res.getId(), 
                         res.getCodigoReserva().getValue(), 
                         Utils.toDate(res.getFechaReserva()),
                         Utils.toDate(res.getFechaHoraDevolucion()),
                         Utils.toDate(res.getFechaHoraRetiro()),
-                        Utils.toDate(res.getFechaCancelacion().getValue()),
+                        null,//fecha de cancelacion viene null, falla el unwrapping de JAXBElement<XMLGregorianCalendar>
                         res.getEstado(), 
                         LugarRetiroDevolucion.fromValue(res.getLugarRetiro().getValue()), 
                         LugarRetiroDevolucion.fromValue(res.getLugarDevolucion().getValue()), 
@@ -63,7 +72,7 @@ public class ModelAdapters {
                         new Cliente(res.getNroDocumentoCliente().getValue(), 
                                     res.getApellidoNombreCliente().getValue()), 
                         res.getUsuarioReserva().getValue(), 
-                        res.getUsuarioCancelacion().getValue(),
+                        null,//usuario cancelacion viene null, falla el unwrapping de JAXBElement<String>
                         res.getTotalReserva(), 
                         res.getTotalReserva().multiply(new BigDecimal("1.20")).setScale(2, RoundingMode.HALF_UP), 
                         res.getVehiculoPorCiudadId(), 

@@ -140,9 +140,8 @@ public class ReservasSoapService {
         
         JAXBElement<String> doc = ModelAdapters.createJAXBString("NroDocumentoCliente", nroDocumentoCliente);        
         reservarVehiculoRequest.setNroDocumentoCliente(doc);
-        try { 
-            getBasicHTTPServiceEndpoint().reservarVehiculo(reservarVehiculoRequest);
-            return ModelAdapters.toReserva(new ReservaEntity());
+        try {             
+            return ModelAdapters.toReserva(getBasicHTTPServiceEndpoint().reservarVehiculo(reservarVehiculoRequest).getReserva().getValue());
         } catch(IWCFReservaVehiculosReservarVehiculoStatusResponseFaultFaultMessage ex) {
             throw new Exception(ex.getFaultInfo().getErrorDescription().getValue(), ex);
         }

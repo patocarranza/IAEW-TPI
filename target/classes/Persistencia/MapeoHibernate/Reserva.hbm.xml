@@ -3,9 +3,10 @@
 <!-- Generated 13-sep-2013 15:59:20 by Hibernate Tools 3.4.0.CR1 -->
 <hibernate-mapping package="edu.utn.frc.iaew.model">   
     <class name="Reserva" table="Reserva">
-        <id column="id" name="id">
+        <id column="idpk" name="idpk">
             <generator class="native"/>
         </id>
+        <property name="id"/>
         <property name="codigoReserva"/>
         <property name="fechaReserva"/>
         <property name="fechaHoraDevolucion"/>

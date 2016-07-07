@@ -1,5 +1,8 @@
 package edu.utn.frc.iaew.model;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
@@ -7,6 +10,8 @@ import java.math.BigDecimal;
  *
  * @author patri_000
  */
+@JsonAutoDetect
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Vehiculo implements Serializable {
         
     private int id;
@@ -43,6 +48,7 @@ public class Vehiculo implements Serializable {
         this.vehiculoPorCiudadId = vehiculoPorCiudadId;
     }
 
+    @JsonProperty
     public Ciudad getCiudad() {
         return ciudad;
     }
@@ -51,6 +57,7 @@ public class Vehiculo implements Serializable {
         this.ciudad = ciudad;
     }
 
+    @JsonProperty
     public int getCantidadDisponible() {
         return cantidadDisponible;
     }
@@ -59,6 +66,7 @@ public class Vehiculo implements Serializable {
         this.cantidadDisponible = cantidadDisponible;
     }   
 
+    @JsonProperty
     public Integer getId() {
         return id;
     }
@@ -67,6 +75,7 @@ public class Vehiculo implements Serializable {
         this.id = id;
     }
 
+    @JsonProperty
     public Integer getCantidadPuertas() {
         return cantidadPuertas;
     }
@@ -75,6 +84,7 @@ public class Vehiculo implements Serializable {
         this.cantidadPuertas = cantidadPuertas;
     }
 
+    @JsonProperty
     public String getMarca() {
         return marca;
     }
@@ -83,6 +93,7 @@ public class Vehiculo implements Serializable {
         this.marca = marca;
     }
 
+    @JsonProperty
     public String getModelo() {
         return modelo;
     }
@@ -91,6 +102,7 @@ public class Vehiculo implements Serializable {
         this.modelo = modelo;
     }
 
+    @JsonProperty
     public BigDecimal getPrecioPorDia() {
         return precioPorDia;
     }
@@ -99,6 +111,7 @@ public class Vehiculo implements Serializable {
         this.precioPorDia = precioPorDia;
     }
 
+    @JsonProperty
     public String getPuntaje() {
         return puntaje;
     }
@@ -107,6 +120,7 @@ public class Vehiculo implements Serializable {
         this.puntaje = puntaje;
     }
 
+    @JsonProperty
     public Boolean getTieneAireAcon() {
         return tieneAireAcon;
     }
@@ -115,6 +129,7 @@ public class Vehiculo implements Serializable {
         this.tieneAireAcon = tieneAireAcon;
     }
 
+    @JsonProperty
     public Boolean getTieneDireccion() {
         return tieneDireccion;
     }
@@ -123,6 +138,7 @@ public class Vehiculo implements Serializable {
         this.tieneDireccion = tieneDireccion;
     }
 
+    @JsonProperty
     public String getTipoCambio() {
         return tipoCambio;
     }
@@ -131,6 +147,7 @@ public class Vehiculo implements Serializable {
         this.tipoCambio = tipoCambio;
     }
 
+    @JsonProperty
     public int getVehiculoPorCiudadId() {
         return vehiculoPorCiudadId;
     }

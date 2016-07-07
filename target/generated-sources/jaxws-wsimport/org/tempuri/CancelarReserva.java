@@ -11,9 +11,9 @@ import org.datacontract.schemas._2004._07.wcfreservavehiculos_business.CancelarR
 
 
 /**
- * <p>Clase Java para anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -40,7 +40,7 @@ public class CancelarReserva {
     protected JAXBElement<CancelarReservaRequest> cancelarReservaRequest;
 
     /**
-     * Obtiene el valor de la propiedad cancelarReservaRequest.
+     * Gets the value of the cancelarReservaRequest property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class CancelarReserva {
     }
 
     /**
-     * Define el valor de la propiedad cancelarReservaRequest.
+     * Sets the value of the cancelarReservaRequest property.
      * 
      * @param value
      *     allowed object is

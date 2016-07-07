@@ -12,9 +12,9 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Clase Java para ReservarVehiculoRequest complex type.
+ * <p>Java class for ReservarVehiculoRequest complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ReservarVehiculoRequest">
@@ -66,7 +66,7 @@ public class ReservarVehiculoRequest {
     protected JAXBElement<String> nroDocumentoCliente;
 
     /**
-     * Obtiene el valor de la propiedad apellidoNombreCliente.
+     * Gets the value of the apellidoNombreCliente property.
      * 
      * @return
      *     possible object is
@@ -78,7 +78,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Define el valor de la propiedad apellidoNombreCliente.
+     * Sets the value of the apellidoNombreCliente property.
      * 
      * @param value
      *     allowed object is
@@ -90,7 +90,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad fechaHoraDevolucion.
+     * Gets the value of the fechaHoraDevolucion property.
      * 
      * @return
      *     possible object is
@@ -102,7 +102,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Define el valor de la propiedad fechaHoraDevolucion.
+     * Sets the value of the fechaHoraDevolucion property.
      * 
      * @param value
      *     allowed object is
@@ -114,7 +114,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad fechaHoraRetiro.
+     * Gets the value of the fechaHoraRetiro property.
      * 
      * @return
      *     possible object is
@@ -126,7 +126,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Define el valor de la propiedad fechaHoraRetiro.
+     * Sets the value of the fechaHoraRetiro property.
      * 
      * @param value
      *     allowed object is
@@ -138,7 +138,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad idVehiculoCiudad.
+     * Gets the value of the idVehiculoCiudad property.
      * 
      * @return
      *     possible object is
@@ -150,7 +150,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Define el valor de la propiedad idVehiculoCiudad.
+     * Sets the value of the idVehiculoCiudad property.
      * 
      * @param value
      *     allowed object is
@@ -162,7 +162,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad lugarDevolucion.
+     * Gets the value of the lugarDevolucion property.
      * 
      * @return
      *     possible object is
@@ -174,7 +174,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Define el valor de la propiedad lugarDevolucion.
+     * Sets the value of the lugarDevolucion property.
      * 
      * @param value
      *     allowed object is
@@ -186,7 +186,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad lugarRetiro.
+     * Gets the value of the lugarRetiro property.
      * 
      * @return
      *     possible object is
@@ -198,7 +198,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Define el valor de la propiedad lugarRetiro.
+     * Sets the value of the lugarRetiro property.
      * 
      * @param value
      *     allowed object is
@@ -210,7 +210,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Obtiene el valor de la propiedad nroDocumentoCliente.
+     * Gets the value of the nroDocumentoCliente property.
      * 
      * @return
      *     possible object is
@@ -222,7 +222,7 @@ public class ReservarVehiculoRequest {
     }
 
     /**
-     * Define el valor de la propiedad nroDocumentoCliente.
+     * Sets the value of the nroDocumentoCliente property.
      * 
      * @param value
      *     allowed object is

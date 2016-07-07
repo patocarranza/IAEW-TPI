@@ -49,14 +49,9 @@ public class ObjectFactory {
     private final static QName _ArrayOfPaisEntity_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "ArrayOfPaisEntity");
     private final static QName _VehiculoModel_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "VehiculoModel");
     private final static QName _ReservarVehiculoResponse_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "ReservarVehiculoResponse");
-    private final static QName _ReservarVehiculoResponseReserva_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Reserva");
-    private final static QName _ConsultarCiudadesResponseCiudades_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Ciudades");
-    private final static QName _ReservarVehiculoRequestNroDocumentoCliente_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "NroDocumentoCliente");
-    private final static QName _ReservarVehiculoRequestApellidoNombreCliente_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "ApellidoNombreCliente");
     private final static QName _StatusResponseErrorDescription_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.ExceptionHandling", "ErrorDescription");
     private final static QName _StatusResponseInnerExceptionDescription_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.ExceptionHandling", "InnerExceptionDescription");
-    private final static QName _PaisEntityNombre_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "Nombre");
-    private final static QName _ConsultarVehiculosDisponiblesResponseVehiculosEncontrados_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "VehiculosEncontrados");
+    private final static QName _ConsultarReservasResponseReservas_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Reservas");
     private final static QName _ReservaEntityApellidoNombreCliente_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "ApellidoNombreCliente");
     private final static QName _ReservaEntityUsuarioCancelacion_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "UsuarioCancelacion");
     private final static QName _ReservaEntityLugarDevolucion_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "LugarDevolucion");
@@ -65,8 +60,14 @@ public class ObjectFactory {
     private final static QName _ReservaEntityCodigoReserva_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "CodigoReserva");
     private final static QName _ReservaEntityNroDocumentoCliente_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "NroDocumentoCliente");
     private final static QName _ReservaEntityUsuarioReserva_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "UsuarioReserva");
-    private final static QName _ConsultarReservasResponseReservas_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Reservas");
+    private final static QName _ReservarVehiculoResponseReserva_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Reserva");
+    private final static QName _PaisEntityNombre_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "Nombre");
+    private final static QName _CancelarReservaRequestCodigoReserva_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "CodigoReserva");
     private final static QName _ConsultarPaisesResponsePaises_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Paises");
+    private final static QName _ConsultarVehiculosDisponiblesResponseVehiculosEncontrados_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "VehiculosEncontrados");
+    private final static QName _ReservarVehiculoRequestNroDocumentoCliente_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "NroDocumentoCliente");
+    private final static QName _ReservarVehiculoRequestApellidoNombreCliente_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "ApellidoNombreCliente");
+    private final static QName _ConsultarCiudadesResponseCiudades_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Ciudades");
     private final static QName _VehiculoEntityTipoCambio_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "TipoCambio");
     private final static QName _VehiculoEntityPuntaje_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "Puntaje");
     private final static QName _VehiculoEntityMarca_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", "Marca");
@@ -75,61 +76,12 @@ public class ObjectFactory {
     private final static QName _VehiculoModelModelo_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Modelo");
     private final static QName _VehiculoModelTipoCambio_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "TipoCambio");
     private final static QName _VehiculoModelPuntaje_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "Puntaje");
-    private final static QName _CancelarReservaRequestCodigoReserva_QNAME = new QName("http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", "CodigoReserva");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.datacontract.schemas._2004._07.wcfreservavehiculos_business
      * 
      */
     public ObjectFactory() {
-    }
-
-    /**
-     * Create an instance of {@link ConsultarCiudadesRequest }
-     * 
-     */
-    public ConsultarCiudadesRequest createConsultarCiudadesRequest() {
-        return new ConsultarCiudadesRequest();
-    }
-
-    /**
-     * Create an instance of {@link ConsultarVehiculosRequest }
-     * 
-     */
-    public ConsultarVehiculosRequest createConsultarVehiculosRequest() {
-        return new ConsultarVehiculosRequest();
-    }
-
-    /**
-     * Create an instance of {@link ConsultarVehiculosDisponiblesResponse }
-     * 
-     */
-    public ConsultarVehiculosDisponiblesResponse createConsultarVehiculosDisponiblesResponse() {
-        return new ConsultarVehiculosDisponiblesResponse();
-    }
-
-    /**
-     * Create an instance of {@link ConsultarCiudadesResponse }
-     * 
-     */
-    public ConsultarCiudadesResponse createConsultarCiudadesResponse() {
-        return new ConsultarCiudadesResponse();
-    }
-
-    /**
-     * Create an instance of {@link ReservarVehiculoRequest }
-     * 
-     */
-    public ReservarVehiculoRequest createReservarVehiculoRequest() {
-        return new ReservarVehiculoRequest();
-    }
-
-    /**
-     * Create an instance of {@link CancelarReservaRequest }
-     * 
-     */
-    public CancelarReservaRequest createCancelarReservaRequest() {
-        return new CancelarReservaRequest();
     }
 
     /**
@@ -149,11 +101,27 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ConsultarReservasRequest }
+     * Create an instance of {@link CancelarReservaRequest }
      * 
      */
-    public ConsultarReservasRequest createConsultarReservasRequest() {
-        return new ConsultarReservasRequest();
+    public CancelarReservaRequest createCancelarReservaRequest() {
+        return new CancelarReservaRequest();
+    }
+
+    /**
+     * Create an instance of {@link ConsultarCiudadesRequest }
+     * 
+     */
+    public ConsultarCiudadesRequest createConsultarCiudadesRequest() {
+        return new ConsultarCiudadesRequest();
+    }
+
+    /**
+     * Create an instance of {@link ReservarVehiculoRequest }
+     * 
+     */
+    public ReservarVehiculoRequest createReservarVehiculoRequest() {
+        return new ReservarVehiculoRequest();
     }
 
     /**
@@ -162,6 +130,46 @@ public class ObjectFactory {
      */
     public CancelarReservaResponse createCancelarReservaResponse() {
         return new CancelarReservaResponse();
+    }
+
+    /**
+     * Create an instance of {@link ConsultarVehiculosDisponiblesResponse }
+     * 
+     */
+    public ConsultarVehiculosDisponiblesResponse createConsultarVehiculosDisponiblesResponse() {
+        return new ConsultarVehiculosDisponiblesResponse();
+    }
+
+    /**
+     * Create an instance of {@link ConsultarCiudadesResponse }
+     * 
+     */
+    public ConsultarCiudadesResponse createConsultarCiudadesResponse() {
+        return new ConsultarCiudadesResponse();
+    }
+
+    /**
+     * Create an instance of {@link ConsultarVehiculosRequest }
+     * 
+     */
+    public ConsultarVehiculosRequest createConsultarVehiculosRequest() {
+        return new ConsultarVehiculosRequest();
+    }
+
+    /**
+     * Create an instance of {@link ReservarVehiculoResponse }
+     * 
+     */
+    public ReservarVehiculoResponse createReservarVehiculoResponse() {
+        return new ReservarVehiculoResponse();
+    }
+
+    /**
+     * Create an instance of {@link ConsultarReservasRequest }
+     * 
+     */
+    public ConsultarReservasRequest createConsultarReservasRequest() {
+        return new ConsultarReservasRequest();
     }
 
     /**
@@ -178,14 +186,6 @@ public class ObjectFactory {
      */
     public ArrayOfVehiculoModel createArrayOfVehiculoModel() {
         return new ArrayOfVehiculoModel();
-    }
-
-    /**
-     * Create an instance of {@link ReservarVehiculoResponse }
-     * 
-     */
-    public ReservarVehiculoResponse createReservarVehiculoResponse() {
-        return new ReservarVehiculoResponse();
     }
 
     /**
@@ -477,42 +477,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReservaEntity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Reserva", scope = ReservarVehiculoResponse.class)
-    public JAXBElement<ReservaEntity> createReservarVehiculoResponseReserva(ReservaEntity value) {
-        return new JAXBElement<ReservaEntity>(_ReservarVehiculoResponseReserva_QNAME, ReservaEntity.class, ReservarVehiculoResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfCiudadEntity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Ciudades", scope = ConsultarCiudadesResponse.class)
-    public JAXBElement<ArrayOfCiudadEntity> createConsultarCiudadesResponseCiudades(ArrayOfCiudadEntity value) {
-        return new JAXBElement<ArrayOfCiudadEntity>(_ConsultarCiudadesResponseCiudades_QNAME, ArrayOfCiudadEntity.class, ConsultarCiudadesResponse.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "NroDocumentoCliente", scope = ReservarVehiculoRequest.class)
-    public JAXBElement<String> createReservarVehiculoRequestNroDocumentoCliente(String value) {
-        return new JAXBElement<String>(_ReservarVehiculoRequestNroDocumentoCliente_QNAME, String.class, ReservarVehiculoRequest.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "ApellidoNombreCliente", scope = ReservarVehiculoRequest.class)
-    public JAXBElement<String> createReservarVehiculoRequestApellidoNombreCliente(String value) {
-        return new JAXBElement<String>(_ReservarVehiculoRequestApellidoNombreCliente_QNAME, String.class, ReservarVehiculoRequest.class, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
@@ -531,21 +495,12 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfReservaEntity }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "Nombre", scope = PaisEntity.class)
-    public JAXBElement<String> createPaisEntityNombre(String value) {
-        return new JAXBElement<String>(_PaisEntityNombre_QNAME, String.class, PaisEntity.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfVehiculoModel }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "VehiculosEncontrados", scope = ConsultarVehiculosDisponiblesResponse.class)
-    public JAXBElement<ArrayOfVehiculoModel> createConsultarVehiculosDisponiblesResponseVehiculosEncontrados(ArrayOfVehiculoModel value) {
-        return new JAXBElement<ArrayOfVehiculoModel>(_ConsultarVehiculosDisponiblesResponseVehiculosEncontrados_QNAME, ArrayOfVehiculoModel.class, ConsultarVehiculosDisponiblesResponse.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Reservas", scope = ConsultarReservasResponse.class)
+    public JAXBElement<ArrayOfReservaEntity> createConsultarReservasResponseReservas(ArrayOfReservaEntity value) {
+        return new JAXBElement<ArrayOfReservaEntity>(_ConsultarReservasResponseReservas_QNAME, ArrayOfReservaEntity.class, ConsultarReservasResponse.class, value);
     }
 
     /**
@@ -630,30 +585,57 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfReservaEntity }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReservaEntity }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Reservas", scope = ConsultarReservasResponse.class)
-    public JAXBElement<ArrayOfReservaEntity> createConsultarReservasResponseReservas(ArrayOfReservaEntity value) {
-        return new JAXBElement<ArrayOfReservaEntity>(_ConsultarReservasResponseReservas_QNAME, ArrayOfReservaEntity.class, ConsultarReservasResponse.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Reserva", scope = ReservarVehiculoResponse.class)
+    public JAXBElement<ReservaEntity> createReservarVehiculoResponseReserva(ReservaEntity value) {
+        return new JAXBElement<ReservaEntity>(_ReservarVehiculoResponseReserva_QNAME, ReservaEntity.class, ReservarVehiculoResponse.class, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "Nombre", scope = CiudadEntity.class)
-    public JAXBElement<String> createCiudadEntityNombre(String value) {
-        return new JAXBElement<String>(_PaisEntityNombre_QNAME, String.class, CiudadEntity.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "Nombre", scope = PaisEntity.class)
+    public JAXBElement<String> createPaisEntityNombre(String value) {
+        return new JAXBElement<String>(_PaisEntityNombre_QNAME, String.class, PaisEntity.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link PaisEntity }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link ReservaEntity }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "PaisEntity", scope = CiudadEntity.class)
-    public JAXBElement<PaisEntity> createCiudadEntityPaisEntity(PaisEntity value) {
-        return new JAXBElement<PaisEntity>(_PaisEntity_QNAME, PaisEntity.class, CiudadEntity.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Reserva", scope = CancelarReservaResponse.class)
+    public JAXBElement<ReservaEntity> createCancelarReservaResponseReserva(ReservaEntity value) {
+        return new JAXBElement<ReservaEntity>(_ReservarVehiculoResponseReserva_QNAME, ReservaEntity.class, CancelarReservaResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CiudadEntity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "CiudadEntity", scope = VehiculoPorCiudadEntity.class)
+    public JAXBElement<CiudadEntity> createVehiculoPorCiudadEntityCiudadEntity(CiudadEntity value) {
+        return new JAXBElement<CiudadEntity>(_CiudadEntity_QNAME, CiudadEntity.class, VehiculoPorCiudadEntity.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link VehiculoEntity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "VehiculoEntity", scope = VehiculoPorCiudadEntity.class)
+    public JAXBElement<VehiculoEntity> createVehiculoPorCiudadEntityVehiculoEntity(VehiculoEntity value) {
+        return new JAXBElement<VehiculoEntity>(_VehiculoEntity_QNAME, VehiculoEntity.class, VehiculoPorCiudadEntity.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "CodigoReserva", scope = CancelarReservaRequest.class)
+    public JAXBElement<String> createCancelarReservaRequestCodigoReserva(String value) {
+        return new JAXBElement<String>(_CancelarReservaRequestCodigoReserva_QNAME, String.class, CancelarReservaRequest.class, value);
     }
 
     /**
@@ -663,6 +645,42 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Paises", scope = ConsultarPaisesResponse.class)
     public JAXBElement<ArrayOfPaisEntity> createConsultarPaisesResponsePaises(ArrayOfPaisEntity value) {
         return new JAXBElement<ArrayOfPaisEntity>(_ConsultarPaisesResponsePaises_QNAME, ArrayOfPaisEntity.class, ConsultarPaisesResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfVehiculoModel }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "VehiculosEncontrados", scope = ConsultarVehiculosDisponiblesResponse.class)
+    public JAXBElement<ArrayOfVehiculoModel> createConsultarVehiculosDisponiblesResponseVehiculosEncontrados(ArrayOfVehiculoModel value) {
+        return new JAXBElement<ArrayOfVehiculoModel>(_ConsultarVehiculosDisponiblesResponseVehiculosEncontrados_QNAME, ArrayOfVehiculoModel.class, ConsultarVehiculosDisponiblesResponse.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "NroDocumentoCliente", scope = ReservarVehiculoRequest.class)
+    public JAXBElement<String> createReservarVehiculoRequestNroDocumentoCliente(String value) {
+        return new JAXBElement<String>(_ReservarVehiculoRequestNroDocumentoCliente_QNAME, String.class, ReservarVehiculoRequest.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "ApellidoNombreCliente", scope = ReservarVehiculoRequest.class)
+    public JAXBElement<String> createReservarVehiculoRequestApellidoNombreCliente(String value) {
+        return new JAXBElement<String>(_ReservarVehiculoRequestApellidoNombreCliente_QNAME, String.class, ReservarVehiculoRequest.class, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ArrayOfCiudadEntity }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Ciudades", scope = ConsultarCiudadesResponse.class)
+    public JAXBElement<ArrayOfCiudadEntity> createConsultarCiudadesResponseCiudades(ArrayOfCiudadEntity value) {
+        return new JAXBElement<ArrayOfCiudadEntity>(_ConsultarCiudadesResponseCiudades_QNAME, ArrayOfCiudadEntity.class, ConsultarCiudadesResponse.class, value);
     }
 
     /**
@@ -738,39 +756,21 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link CiudadEntity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "CiudadEntity", scope = VehiculoPorCiudadEntity.class)
-    public JAXBElement<CiudadEntity> createVehiculoPorCiudadEntityCiudadEntity(CiudadEntity value) {
-        return new JAXBElement<CiudadEntity>(_CiudadEntity_QNAME, CiudadEntity.class, VehiculoPorCiudadEntity.class, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link VehiculoEntity }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "VehiculoEntity", scope = VehiculoPorCiudadEntity.class)
-    public JAXBElement<VehiculoEntity> createVehiculoPorCiudadEntityVehiculoEntity(VehiculoEntity value) {
-        return new JAXBElement<VehiculoEntity>(_VehiculoEntity_QNAME, VehiculoEntity.class, VehiculoPorCiudadEntity.class, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link String }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "CodigoReserva", scope = CancelarReservaRequest.class)
-    public JAXBElement<String> createCancelarReservaRequestCodigoReserva(String value) {
-        return new JAXBElement<String>(_CancelarReservaRequestCodigoReserva_QNAME, String.class, CancelarReservaRequest.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "Nombre", scope = CiudadEntity.class)
+    public JAXBElement<String> createCiudadEntityNombre(String value) {
+        return new JAXBElement<String>(_PaisEntityNombre_QNAME, String.class, CiudadEntity.class, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ReservaEntity }{@code >}}
+     * Create an instance of {@link JAXBElement }{@code <}{@link PaisEntity }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.Entities", name = "Reserva", scope = CancelarReservaResponse.class)
-    public JAXBElement<ReservaEntity> createCancelarReservaResponseReserva(ReservaEntity value) {
-        return new JAXBElement<ReservaEntity>(_ReservarVehiculoResponseReserva_QNAME, ReservaEntity.class, CancelarReservaResponse.class, value);
+    @XmlElementDecl(namespace = "http://schemas.datacontract.org/2004/07/WCFReservaVehiculos.Business.DataBaseModel", name = "PaisEntity", scope = CiudadEntity.class)
+    public JAXBElement<PaisEntity> createCiudadEntityPaisEntity(PaisEntity value) {
+        return new JAXBElement<PaisEntity>(_PaisEntity_QNAME, PaisEntity.class, CiudadEntity.class, value);
     }
 
 }

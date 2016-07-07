@@ -27,11 +27,6 @@ public class AuxDataEndpoint {
     public Response listarVendedores() {
         VendedorDAO dao = new VendedorDAO();
         return RestUtils.getCORS200Response(dao.listar());
-        /*List<Vendedor> vendedoresMock = new LinkedList<>();
-        vendedoresMock.add(new Vendedor(1, "Juan"));
-        vendedoresMock.add(new Vendedor(2, "Pablo"));
-        vendedoresMock.add(new Vendedor(3, "Alvaro"));
-        return RestUtils.getCORS200Response(vendedoresMock);*/
     }    
     
     @GET

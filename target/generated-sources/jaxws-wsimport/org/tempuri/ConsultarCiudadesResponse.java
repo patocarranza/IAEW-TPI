@@ -10,9 +10,9 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -39,7 +39,7 @@ public class ConsultarCiudadesResponse {
     protected JAXBElement<org.datacontract.schemas._2004._07.wcfreservavehiculos_business.ConsultarCiudadesResponse> consultarCiudadesResult;
 
     /**
-     * Obtiene el valor de la propiedad consultarCiudadesResult.
+     * Gets the value of the consultarCiudadesResult property.
      * 
      * @return
      *     possible object is
@@ -51,7 +51,7 @@ public class ConsultarCiudadesResponse {
     }
 
     /**
-     * Define el valor de la propiedad consultarCiudadesResult.
+     * Sets the value of the consultarCiudadesResult property.
      * 
      * @param value
      *     allowed object is
